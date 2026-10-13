@@ -1719,3 +1719,8 @@ table.cmpt tr:last-child th,table.cmpt tr:last-child td{border-bottom:0}
 .b-20{background-image:url(/assets/img/b-20.webp)}
 .b-10{background-image:url(/assets/img/b-10.webp)}
 .b-tr{background-image:url(/assets/img/b-tr.webp)}
+
+/* Reserve dealer-funnel media space before assets load (NR-2). */
+.vsl{aspect-ratio:16/9}.amap-img{aspect-ratio:16/9;object-fit:contain}
+/* Six initial trade choices: reserve their height before the runtime attaches. */
+.fn-step[data-s="1"] .fn-opts{min-height:386px}

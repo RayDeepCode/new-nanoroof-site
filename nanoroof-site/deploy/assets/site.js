@@ -8,32 +8,32 @@ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var FAQ={
  cost:['How much does it cost?','It depends on your roof\u2019s size, pitch, condition and local labor. The instant estimate gives a rough range for preservation and replacement side by side; your dealer confirms the price after the free assessment. Repairs found at the assessment are priced separately.'],
  leak:['Will it stop my roof from leaking?','No. Most roof leaks come from flashings around chimneys, skylights and walls, not from the shingles. Your dealer repairs those first during the tune-up, and the assessment will point them out.'],
- 'new':['Can you treat a new roof?','Usually not yet. New shingles have a factory surface that has to wear in before the material can bond. In southern climates that\u2019s often 6-8 years, in northern climates 8-10. A dealer can check your roof and tell you when it makes sense.'],
+ new:["Can I treat a new roof?", "A dealer can check your roof and tell you when it makes sense."],
  old:['My roof is over 20 years old. Is it too late?','Not always. It depends on condition rather than age: granule loss, brittleness and the decking underneath. The assessment answers it for your roof.'],
  'qualify-who':['Who decides whether my roof qualifies?','The certified dealer, at the roof-life assessment, based on the shingles, the decking and the flashings. You get the reason in writing either way.'],
- 'c-tear':['Do you have to tear off my existing roof?','Usually not. If the moisture survey shows the roof is sound, the PPS System goes over it. Wet sections are cut out and replaced first. If moisture runs through a large share of the roof, replacement is the better call, and the survey report will say so.'],
- 'c-open':['Can the building stay open during the work?','In most cases, yes. There is no tear-off, so no open roof or debris. The membrane is rolled on by hand, so there is no overspray. Your dealer plans staging, access and any rooftop air-intake shutdowns with you before the job starts.'],
- 'c-pond':['What about ponding water?','Low spots are mapped in the survey. They can be built up with PPS Foam or extra membrane to restore pitch toward drains, and PPS Armor, a pure polyurea, is used where water and wear are heaviest.'],
- 'c-tax':['Is a commercial roof restoration tax-deductible?','Roofs on nonresidential buildings are eligible property under Section 179, which can allow the cost to be deducted in the year it is placed in service rather than depreciated over decades. How it applies depends on your situation, so ask your tax advisor.'],
- 'c-warr':['How is the warranty set?','By the system and thickness specified for your roof. Terms are written for your building after the survey and confirmed before the job starts.'],
- 'c-roofs':['Which roofs can the PPS System go over?','Modified bitumen, built-up, TPO, EPDM, PVC, metal, concrete decks and spray foam, once an adhesion test on your membrane confirms the bond.'],
- color:['Can NANOROOF bring back my roof\u2019s color?','Yes. Roof Preservation Dealers now offer color restoration in four shades to start: Charcoal, Weathered Wood, Pewter Gray and Barkwood. It restores a roof that has faded or gone uneven. Ask your dealer for a sample on your roof, since screens shift color.'],
+
+
+
+
+
+
+ color:["Can NANOROOF restore roof color?", "Ask your dealer for approved color options and a sample on your roof."],
  colorhoa:['Do I need HOA approval for a roof color?','Often, yes. Many communities approve roof colors, so check your HOA rules before choosing. A shade close to your current roof is usually the easiest to get approved.'],
- trap:['Will NANOROOF trap moisture in my roof?','No. Liquid water and water vapor behave differently: silicone repels liquid water but is highly permeable to water vapor. Asphalt shingles were never the path moisture leaves a house anyway; that happens through attic vents the building code requires. What does trap water is a cracked rigid film, which is why NANOROOF bonds into the shingle and stays flexible.'],
+ trap:["What is the SPS System?", "A water-based silicone that penetrates and bonds inside asphalt shingles and adds a surface layer."],
  rejuv:['How is this different from a rejuvenator or other soak-in treatment?','Rejuvenators and other penetrating treatments, including nano-silica products, soak into the asphalt but leave no protective layer on top of the granules. NANOROOF penetrates and bonds inside the shingle and also forms a bonded layer on top, encapsulating it.'],
- sealer:['How is it different from a roof coating or sealer?','A surface coating sits on the granules as a film and never reaches the asphalt underneath. NANOROOF bonds inside the shingle as well as on top, so it isn\u2019t a film resting on the surface.'],
+ sealer:["How is it different from a roof coating or a rejuvenator?", "NANOROOF penetrates and bonds inside asphalt shingles and adds a surface layer."],
  how:['What is NANOROOF made of?','NANOROOF is a water-based silicone elastomer made with proprietary nano-chemistry, designed for asphalt shingles. It\u2019s applied by spray.'],
- w1:['What does the warranty cover?','Labor and material for the NANOROOF treatment on a registered roof, for its term: 10 years as standard, with 15- and 20-year terms available. Under normal weather, the treated surface should resist water penetration, hold granules, resist UV and resist mold, algae and mildew.'],
+ w1:["What does the warranty cover?", "10-year warranty standard; 15 and 20 available on qualifying roofs; 5-year on Level-5 roofs."],
  w2:['What does \u201cuseful life\u201d mean?','The period during which the shingles can reasonably be expected to protect the roof structure underneath.'],
  w3:['Does my shingle manufacturer\u2019s warranty matter?','The NANOROOF warranty stays valid even if your shingle manufacturer\u2019s warranty has expired or can\u2019t be transferred.'],
  w4:['What isn\u2019t covered?','Acts of God and natural disasters, roof leaks, structural failures, failures of earlier coatings, unforeseen environmental conditions, and damage from faulty application or inadequate repairs.'],
  insure:['Will my insurance company accept a preserved roof?','Each insurer sets its own rules on roof age and condition, so we can\u2019t promise how yours will treat it. Your Roof Record gives an inspector the photos, readings and warranty from the job.'],
  day:['What happens on the day?','The crew washes and preps the roof, checks shingle moisture, sprays the treatment, leaves a test sample and records the readings. Most homes are done in one visit, with no tear-off.'],
- temp:['Can NANOROOF be applied in winter?','The SPS System isn&rsquo;t applied below 40&deg;F. In colder months, your dealer can still do the roof-life assessment and book the treatment for when it warms up.'],
- buy:['Can I buy NANOROOF and apply it myself?','No. NANOROOF products are professional-grade and sold only to trained, certified Roof Preservation Dealers, not to homeowners or at retail. The result depends on the whole protocol: the assessment, repairs, soft wash, baseline readings, metered application and registration. Only a certified dealer can register the job, and the warranty depends on that registration.'],
- tune1:['What does a tune-up include?','Flashings inspected and sealed, gutters cleared, damaged shingles replaced, loose shingles secured, penetrations sealed, attic ventilation checked, valleys cleared, eaves and soffits inspected, branches trimmed and drainage checked.'],
+ temp:["Can NANOROOF be applied in winter?", "Spray-applied; it isn’t applied in cold weather."],
+ buy:['Can I buy NANOROOF and apply it myself?','No. NANOROOF products are professional-grade and sold only to trained, certified NANOROOF Certified Dealers, not to homeowners or at retail. The result depends on the whole protocol: the assessment, repairs, soft wash, baseline readings, metered application and registration. Only a certified dealer can register the job, and the warranty depends on that registration.'],
+ tune1:['What does a tune-up include?','Flashings inspected and repaired, gutters cleared, damaged shingles replaced, loose shingles secured, penetrations repaired, attic ventilation checked, valleys cleared, eaves and soffits inspected, branches trimmed and drainage checked.'],
  tune2:['How often should I get a tune-up?','At least once a year, after severe weather, and before selling your home.'],
- tune3:['Can a tune-up prevent leaks?','It reduces the risk by sealing flashings, securing loose shingles and fixing weak spots before water finds them.']
+ tune3:['Can a tune-up prevent leaks?','It reduces the risk by repairing flashings, securing loose shingles and fixing weak spots before water finds them.']
 };
 qa('[data-faq]').forEach(function(box){
   box.innerHTML=box.getAttribute('data-faq').split(',').map(function(k){var f=FAQ[k];return f?'<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>':'';}).join('');
@@ -47,7 +47,7 @@ function initCycle(S){ if(!document.getElementById('ring'+S)) return;
      fix:'The silicone layer on top shields the shingle surface from UV, and it covers the spots where granules have already thinned.'},
     {t:['Photo-oxidation','+ volatilization'], title:'Photo-oxidation and volatilization', cut:true,
      body:'UV oxidizes the asphalt binder, and heat drives off its lighter oils. The asphalt slowly loses the compounds that keep it supple.',
-     fix:'Penetrating and bonding inside the shingle, then sealing over it, encapsulates the asphalt so less of it is left open to sun and air.'},
+     fix:'SPS encapsulates: a water-based silicone that penetrates and bonds inside asphalt shingles and adds a surface layer.'},
     {t:['Brittleness'], title:'Brittleness', cut:false,
      body:'With its oils gone and its binder oxidized, the asphalt hardens. A brittle shingle can\u2019t flex the way a new one does.',
      fix:'Not reversed directly. NANOROOF slows it by working on the stages that feed it: UV, oxidation and moisture.'},
@@ -131,7 +131,7 @@ var NEXT={
  'cleaning-products':['See what a soft wash can do','Cleaning is part of every preservation job.','#/cleaning','How roof cleaning works','#/estimate','Get my estimate'],
  'technical-data':['Need the full data sheets?','Technical and safety data sheets on request.','#/technical-data/request','Request data sheets','#/architects','For architects'],
  science:['See the science on your roof','A free assessment tells you which system fits.','#/assessment','Book an assessment','#/estimate','Get my estimate'],
- polyurea:['Put polyurea on your flat roof','A free moisture survey and written report.','#/commercial/survey','Request a roof survey','#/commercial','The PPS System'],
+
  'roof-check':['Ready for a real answer?','A free assessment confirms it in writing.','#/assessment','Book a free assessment','#/estimate','Get my estimate'],
  'granule-loss':['Find out how much granule is left','A free assessment measures it slope by slope.','#/assessment','Book an assessment','#/roof-check','Check a photo'],
  'algae-streaks':['Get the streaks off safely','Soft wash, then preserve.','#/cleaning','How roof cleaning works','#/estimate','Get my estimate'],
@@ -236,13 +236,14 @@ var af=document.getElementById('addrForm');
 if(af){ af.addEventListener('submit',function(e){ e.preventDefault();
   var v=document.getElementById('addr').value.trim(), er=document.getElementById('addrErr');
   if(v.length<6||!/\d/.test(v)){ er.textContent='Enter your street address, for example 120 Oak Street, Springfield.'; document.getElementById('addr').focus(); return; }
-  er.textContent=''; window.__roofAddr=v; location.hash='#/estimate'; }); }
+  er.textContent=''; try{sessionStorage.setItem('nr_estimate_address',v);}catch(e){} window.__roofAddr=v; location.href='/estimate/'; }); }
 function showAddr(){ var host=document.querySelector('[data-estimator="page"]'); if(!host) return;
   var box=document.getElementById('estAddr');
   if(!box){ box=document.createElement('div'); box.id='estAddr'; box.className='est-addr'; host.parentNode.insertBefore(box,host); }
+  try{window.__roofAddr=window.__roofAddr||sessionStorage.getItem('nr_estimate_address');}catch(e){}
   if(window.__roofAddr){ box.innerHTML='<b>Estimate for:</b> '+window.__roofAddr.replace(/[<>&]/g,'')+'<br><span style="font-size:.9rem">The live version measures this roof from satellite data. For now, add your home size below.</span>'; box.classList.add('on'); }
 }
-window.addEventListener('hashchange',showAddr);
+showAddr();
 
 
 /* ---------- sustainability calculator ---------- */
@@ -319,6 +320,7 @@ var GROUP={qualify:'app',colors:'app',cleaning:'app','tune-up':'app',commercial:
 function route(){
   var slug=window.__SLUG||'home', sub=(location.hash||'').replace(/^#/,'')||null;
   var target=document.querySelector('[data-page="'+slug+'"]')||document.querySelector('[data-page="404"]');
+  if(!target){closeMenus();closeDrawer();return;}
   pages.forEach(function(p){p.classList.toggle('on',p===target);});
   document.title=target.getAttribute('data-title')||'NANOROOF';
   closeMenus(); closeDrawer(); setAud(slug);
@@ -335,34 +337,34 @@ route();
 var qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s));};
 /* ---------- internal page system: facts, hero images, on-this-page, related ---------- */
 (function(){
-var T={ 'how-it-works':['Why shingles fail','The seven-stage aging loop'],'silicone':['Why silicone','The chemistry behind the SPS System'],'repair-products':['Roof repair products','Caulk and liquid flashing'],'cleaning-products':['Cleaning products','Cleaner ECO and PPS Prep'],'technical-data':['Technical data','Properties and data sheets'],'science':['The science','Silicone and polyurea'],'polyurea':['Why polyurea','The chemistry behind the PPS System'],'granule-loss':['Granule loss','Granules in the gutters'],'algae-streaks':['Algae and moss','Dark streaks and green growth'],'curling-cracking':['Curling and cracking','Dried-out shingles'],'roof-leaks':['Roof leaks','A repair problem first'],'roof-check':['Photo roof check','Screen your roof from a photo'],'roof-system':['The roof as a system','Why every job checks the whole roof'],
+var T={ 'how-it-works':['Why shingles fail','The seven-stage aging loop'],'silicone':['Why silicone','The chemistry behind the SPS System'],'repair-products':['Roof repair products','Caulk and liquid flashing'],'cleaning-products':['Cleaning products','Roof cleaner'],'technical-data':['Technical data','Properties and data sheets'],'science':['The science','Silicone for shingles'],'granule-loss':['Granule loss','Granules in the gutters'],'algae-streaks':['Algae and moss','Dark streaks and green growth'],'curling-cracking':['Curling and cracking','Dried-out shingles'],'roof-leaks':['Roof leaks','A repair problem first'],'roof-check':['Photo roof check','Screen your roof from a photo'],'roof-system':['The roof as a system','Why every job checks the whole roof'],
  'qualify':['Does my roof qualify?','Who it\u2019s for, and who it isn\u2019t'],'products':['Products','The SPS System and repair products'],'assessment':['Roof-life assessment','Free, written, with photos'],
  'tune-up':['10-point tune-up','Small problems, fixed early'],'cleaning':['Roof cleaning','Low-pressure soft wash'],'preservation':['NANOROOF preservation','The one-day application, step by step'],
- 'care-plan':['Care Plan','Check-ups and your Roof Record'],'sps':['The SPS System','What the letters mean'],'colors':['Roof colors','Four colors to start'],
+ 'care-plan':['Care Plan','Check-ups and your Roof Record'],'sps':['The SPS System','What the letters mean'],'colors':['Roof colors','Ask for approved color options'],
  'warranty':['Warranty','10, 15 and 20-year terms'],'property-owners':['Portfolios and HOAs','Portfolios, HOAs and multifamily'],'estimate':['Instant estimate','Preservation vs. replacement'],
- 'faq':['FAQ','Straight answers'],'learn':['Guides','Plain answers for homeowners'],'moisture':['The moisture myth','The physics of water and vapor'],'field-data':['Field Data','Condition, measured'],
+ 'faq':['FAQ','Straight answers'],'learn':['Guides','Plain answers for homeowners'],'moisture':['The moisture myth','The SPS System'],'field-data':['Field Data','Condition, measured'],
  'find-a-dealer':['Find a dealer','Certified dealers near you'],'about':['About NANOROOF','Who we are and what we believe'],'sustainability':['Sustainability','A roof kept is a roof not landfilled'],
- 'contact':['Contact','Reach the right person'],'commercial':['Commercial flat roofs','The PPS System'],'contractors':['Become a dealer','Become a Roof Preservation Dealer'],
+ 'contact':['Contact','Reach the right person'],'contractors':['Become a dealer','Become a NANOROOF Certified Dealer'],
  'referral-partners':['Referral partners','For agents and inspectors'],'homeowners':['For homeowners','Preservation, explained'],'architects':['For architects','Spec-ready documentation'] };
 var F={ 'how-it-works':['7-stage aging loop','Bonds inside, encapsulates','Targets 5 of the 7 stages'],'silicone':['Named in 1904','UV can\u2019t break its backbone','Water-based and recoatable'],
- 'repair-products':['Professional-grade','Used in every tune-up','Damp and cold tolerant caulk'],'cleaning-products':['Professional-grade','PPS Prep for flat roofs','Clean before every treatment'],'technical-data':['Professional-grade','Repair and cleaning products','Data sheets on request'],'science':['Silicone for shingles','Polyurea for flat roofs','One chemistry per roof'],'polyurea':['Introduced as a spray in 1989','Cures without a catalyst','Seamless and tough'],'granule-loss':['UV loosens granules','Early loss is treatable','Free assessment'],'algae-streaks':['Soft wash, not pressure','Granules stay on','Encapsulated against regrowth'],'curling-cracking':['Catch it early','Secured in the tune-up','Checked for flexibility'],'roof-leaks':['Most start at flashings','Repaired first','Then decide'],'roof-check':['Takes about a minute','Screening, not an assessment','Free'],'roof-system':['8 parts of the roof checked','Repairs before treatment','An honest no when it won\u2019t work'],'qualify':['Free assessment','A written yes or no','Repairs priced separately'],
- 'products':['Professional-grade','Sold only to certified dealers','SPS and PPS Systems'],'assessment':['Free','12 checkpoints','Written report with photos'],
- 'tune-up':['10 points','Before every treatment','Yearly with the Care Plan'],'cleaning':['Low-pressure soft wash','NANOROOF Cleaner ECO','Landscaping protected'],
- 'preservation':['6 steps','Usually one visit','Every step on record'],'care-plan':['Scheduled check-ups','Readings compared to day one','Keeps the warranty extension active'],
- 'sps':['Professional-grade','Dealer-applied','Registered warranty'],'colors':['4 colors to start','Restores faded roofs','See a sample on your roof'],
+ 'repair-products':['Professional-grade','Used in every tune-up','Damp and cold tolerant caulk'],'cleaning-products':['Professional-grade','Roof cleaning','Clean before every treatment'],'technical-data':['Professional-grade','Repair and cleaning products','Data sheets on request'],'science':['Silicone for shingles','Residential asphalt shingles','One chemistry per roof'],'granule-loss':['UV loosens granules','Early loss is treatable','Free assessment'],'algae-streaks':['Soft wash, not pressure','Granules stay on','Encapsulated against regrowth'],'curling-cracking':['Catch it early','Secured in the tune-up','Checked for flexibility'],'roof-leaks':['Most start at flashings','Repaired first','Then decide'],'roof-check':['Takes about a minute','Screening, not an assessment','Free'],'roof-system':['8 parts of the roof checked','Repairs before treatment','An honest no when it won\u2019t work'],'qualify':['Free assessment','A written yes or no','Repairs priced separately'],
+ 'products':['Professional-grade','Sold only to certified dealers','The SPS System'],'assessment':['Free','25-point inspection scored out of 250','Written report with photos'],
+ 'tune-up':['10 points','Before every treatment','Recoat timing is set at the Care-Plan inspection'],'cleaning':['Low-pressure soft wash','roof cleaner','Landscaping protected'],
+ 'preservation':['6 steps','Usually one visit','Every step on record'],'care-plan':['Scheduled check-ups','Readings compared to day one','The Care-Plan only adds coverage'],
+ 'sps':['Professional-grade','Dealer-applied','Registered warranty'],'colors':['Ask for approved color options','Restores faded roofs','See a sample on your roof'],
  'warranty':['10-year standard','15 and 20-year terms','Transferable when you sell'],'property-owners':['Multifamily, HOAs, portfolios','Roof Cost Savings Report','One program, many buildings'],
- 'moisture':['Liquid water is blocked','Water vapor passes through','Roofs vent through the attic'],'field-data':['Recorded on every job','Measured: being built','Underwritable: the goal'],
- 'find-a-dealer':['Independent dealers','Trained and certified','Verify before you sign'],'about':['Nano Products LLC','West Palm Beach, Florida','Independent dealer network'],
- 'sustainability':['EPA-sourced figures','Shingles kept out of landfill','Every number cited'],'commercial':['One seamless membrane','Moisture survey first','Rolled on today'],
- 'contractors':['Certification program','Residential and commercial','Colors to offer'],'referral-partners':['Agents, inspectors, adjusters','Free assessment for clients','Simple referrals'],
+ 'moisture':['The SPS System','Water-based silicone','Dealer-applied'],'field-data':['Recorded on every job','Measured: being built','Underwritable: the goal'],
+ 'find-a-dealer':['Independent dealers','Trained and certified','Verify before you sign'],'about':['NANO Products, LLC dba NANOROOF','West Palm Beach, Florida','Independent dealer network'],
+ 'sustainability':['Preserve what still works','Shingles kept out of landfill','Residential asphalt shingles'],
+ 'contractors':['Certification program','Residential asphalt shingles','Colors to offer'],'referral-partners':['Agents, inspectors, adjusters','Free assessment for clients','Simple referrals'],
  'homeowners':['Plain answers','Questions to ask any roofer','Free assessment'],'architects':['Spec-ready material data','Submittals on request','Quality control you can specify'] };
-var R={ 'how-it-works':['roof-system','silicone','qualify'],'silicone':['science','polyurea','sps'],'repair-products':['tune-up','technical-data','roof-system'],'cleaning-products':['cleaning','technical-data','sps'],'technical-data':['products','architects','sps'],'science':['silicone','polyurea','how-it-works'],'polyurea':['commercial','science','technical-data'],'granule-loss':['roof-check','how-it-works','assessment'],'algae-streaks':['cleaning','cleaning-products','roof-check'],'curling-cracking':['tune-up','roof-system','roof-check'],'roof-leaks':['tune-up','repair-products','roof-system'],'roof-check':['qualify','assessment','estimate'],'roof-system':['assessment','tune-up','qualify'],'qualify':['assessment','roof-system','estimate'],
+var R={ 'how-it-works':['roof-system','silicone','qualify'],'silicone':['science','sps'],'repair-products':['tune-up','technical-data','roof-system'],'cleaning-products':['cleaning','technical-data','sps'],'technical-data':['products','architects','sps'],'science':['silicone','how-it-works'],'granule-loss':['roof-check','how-it-works','assessment'],'algae-streaks':['cleaning','cleaning-products','roof-check'],'curling-cracking':['tune-up','roof-system','roof-check'],'roof-leaks':['tune-up','repair-products','roof-system'],'roof-check':['qualify','assessment','estimate'],'roof-system':['assessment','tune-up','qualify'],'qualify':['assessment','roof-system','estimate'],
  'products':['technical-data','repair-products','cleaning-products'],'assessment':['roof-system','tune-up','estimate'],'tune-up':['assessment','cleaning','care-plan'],'cleaning':['tune-up','preservation','colors'],
  'preservation':['cleaning','care-plan','warranty'],'care-plan':['warranty','field-data','tune-up'],'sps':['silicone','products','preservation'],'colors':['preservation','estimate','cleaning'],
- 'warranty':['care-plan','field-data','faq'],'property-owners':['commercial','field-data','estimate'],'estimate':['qualify','assessment','find-a-dealer'],'faq':['learn','moisture','warranty'],
+ 'warranty':['care-plan','field-data','faq'],'property-owners':['field-data','estimate'],'estimate':['qualify','assessment','find-a-dealer'],'faq':['learn','moisture','warranty'],
  'learn':['how-it-works','moisture','roof-system'],'moisture':['silicone','roof-system','how-it-works'],'field-data':['care-plan','warranty','roof-system'],'find-a-dealer':['assessment','estimate','contractors'],
- 'about':['sustainability','field-data','contractors'],'sustainability':['about','how-it-works','field-data'],'contact':['find-a-dealer','faq','estimate'],'commercial':['property-owners','products','field-data'],
- 'referral-partners':['contractors','homeowners','find-a-dealer'],'homeowners':['qualify','faq','estimate'],'architects':['products','commercial','field-data'] };
+ 'about':['sustainability','field-data','contractors'],'sustainability':['about','how-it-works','field-data'],'contact':['find-a-dealer','faq','estimate'],
+ 'referral-partners':['contractors','homeowners','find-a-dealer'],'homeowners':['qualify','faq','estimate'],'architects':['products','field-data'] };
 var IMG={'roof-check':'gi-phone','science':'gi-drop','contact':'gi-15','about':'gi-17', 'roof-system':'gi-rs','products':'gi-mac','faq':'gi-c0','learn':'gi-mac','moisture':'gi-mac','field-data':'gi-mm','contact':'gi-nb','find-a-dealer':'gi-nb','cleaning':'gi-cb' };
 function build(){
   qa('.page[data-page]').forEach(function(pg){
@@ -415,23 +417,23 @@ qa('[data-qcheck]').forEach(function(q){ var out=q.querySelector('.qresult');
   q.addEventListener('change',function(){ var v={}; ['q1','q2','q3','q4','q5'].forEach(function(n){ var c=q.querySelector('input[name='+n+']:checked'); if(c) v[n]=c.value; });
     var n=Object.keys(v).length; if(n<5){ out.innerHTML='<p>'+(5-n)+' question'+(5-n>1?'s':'')+' to go.</p>'; return; }
     var r;
-    if(v.q1==='no') r=['no','Preservation is for asphalt shingles','The SPS System is made for asphalt shingle roofs. For flat commercial roofs, see the <a href="#/commercial">PPS System</a>.'];
+    if(v.q1==='no') r=['no','Preservation is for asphalt shingles','The SPS System is made for asphalt shingle roofs. '];
     else if(v.q2==='no') r=['no','A soft or sagging roof needs a closer look','That usually means decking damage, which rules preservation out until it&rsquo;s repaired. An assessment will confirm it.'];
     else if(v.q3==='fix'||v.q4==='fix') r=['fix','Likely a fit after repairs','Leaks and damaged shingles are fixed first, then the roof can be preserved. The assessment lists and prices the repairs.'];
     else r=['ok','Sounds like a good candidate','Aging but sound is exactly what preservation is for. A free assessment will confirm it in writing.'];
     out.className='qresult '+r[0]; out.innerHTML='<b>'+r[1]+'</b><p>'+r[2]+'</p><a class="btn btn-green" href="#/assessment">Book a free assessment</a>'; }); });
 /* ---------- conversion tracking (dataLayer; connect GA4/GTM later) ---------- */
 window.dataLayer=window.dataLayer||[];
-function track(ev,p){ try{ window.dataLayer.push(Object.assign({event:ev,page:(location.hash.replace('#/','')||'home')},p||{})); }catch(e){} }
+function track(ev,p){ try{ window.dataLayer.push(Object.assign({event:ev,page:(window.__SLUG||'home')},p||{})); }catch(e){} }
 window.nrTrack=track;
-track('page_view'); window.addEventListener('hashchange',function(){ track('page_view'); });
+track('page_view');
 document.addEventListener('click',function(e){ var a=e.target.closest('a,button'); if(!a) return; var h=a.getAttribute('href')||'';
   if(h.indexOf('tel:')===0) track('call_click');
   else if(h.indexOf('mailto:')===0) track('email_click');
   else if(a.classList.contains('btn')) track('cta_click',{label:(a.textContent||'').trim().slice(0,60),target:h});
 },true);
 document.addEventListener('submit',function(e){ var f=e.target; if(f.hasAttribute('data-dapp')) return; track(f.closest('[data-estimator]')?'estimate_submit':'form_submit',{form:(f.closest('.page')||{}).getAttribute?f.closest('.page').getAttribute('data-page'):''}); },true);
-(function(){ var q=document.getElementById('faqq'); if(q){ var t; q.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(function(){ if(q.value.trim()) track('faq_search',{q:q.value.trim().slice(0,60)}); },900); }); } })();
+(function(){ var q=document.getElementById('faqq'); if(q){ var t; q.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(function(){ if(q.value.trim()) track('faq_search'); },900); }); } })();
 
 /* ---------- photo roof check (Claude via the artifact sample capability) ---------- */
 (function(){ var box=document.querySelector('[data-roofcheck]'); if(!box) return;
@@ -446,7 +448,7 @@ document.addEventListener('submit',function(e){ var f=e.target; if(f.hasAttribut
   var VD={good_candidate:['ok','Looks like a good candidate','Aging but sound is what preservation is for. A free assessment confirms it in writing.','#/assessment','Book a free assessment'],
     repairs_first:['fix','Likely a fit after repairs','Some problems should be fixed first. The tune-up handles them, then the roof can be preserved.','#/assessment','Book a free assessment'],
     closer_look:['no','Needs a closer look','What the photo shows could mean the roof is past preserving. A dealer can check the decking and structure.','#/assessment','Have a dealer look'],
-    not_applicable:['no','This doesn\u2019t look like an asphalt shingle roof','The SPS System is for asphalt shingles. Flat commercial roofs use the PPS System.','#/commercial','See the PPS System'],
+    not_applicable:['no','This doesn\u2019t look like an asphalt shingle roof','The SPS System is for residential asphalt shingles.','#/find-a-dealer','Find a dealer'],
     unclear:['fix','The photo isn\u2019t clear enough','Try a daylight photo that shows more of the roof, or take the 5-question check.','#/qualify','Take the 5-question check']};
   go.addEventListener('click',function(){ if(!sample||!blob) return; go.disabled=true; out.hidden=true; st.textContent='Looking at your roof\u2026 this can take up to a minute.'; track('roof_check_run');
     var prompt='You are screening a homeowner\u2019s photo of their roof for NANOROOF, a roof preservation treatment for ASPHALT SHINGLE roofs that are aging but still sound. It is not for failed roofs (soft decking, widespread missing or brittle shingles) and leaks must be repaired first. Look only at what is visible in the photo. Do not guess about things you cannot see, such as decking or the attic. Reply with JSON only, no other text, in exactly this shape: {"is_roof_photo": true|false, "roof_type": "asphalt shingle"|"metal"|"tile"|"flat"|"wood"|"other"|"unclear", "findings": [{"sign": "Fading or discoloration", "level": "none"|"mild"|"moderate"|"severe"|"unclear", "note": "under 18 words"}, {"sign": "Granule loss"...}, {"sign": "Algae, moss or lichen"...}, {"sign": "Curling or cracking"...}, {"sign": "Missing or damaged shingles"...}, {"sign": "Flashing or penetration problems"...}], "verdict": "good_candidate"|"repairs_first"|"closer_look"|"not_applicable"|"unclear", "summary": "two plain-language sentences for a homeowner, no jargon", "photo_tip": "one short suggestion for a better photo, or empty string"}. Use "not_applicable" if it is not an asphalt shingle roof, and "unclear" if the image is not a roof or is too unclear to judge.';
@@ -467,7 +469,7 @@ document.addEventListener('submit',function(e){ var f=e.target; if(f.hasAttribut
 /* ---------- social profiles: fill in the URLs; empty = icon shown, no link ---------- */
 (function(){ var SOCIAL={facebook:'',linkedin:'',instagram:'',youtube:''};
   qa('a[data-social]').forEach(function(a){ var u=SOCIAL[a.getAttribute('data-social')];
-    if(u){ a.href=u; a.target='_blank'; a.rel='noopener'; } else { a.setAttribute('aria-disabled','true'); a.addEventListener('click',function(e){ e.preventDefault(); }); } }); })();
+    if(u){ a.href=u; a.target='_blank'; a.rel='noopener'; } else { a.hidden=true; } }); })();
 /* ---------- dealer application page ---------- */
 qa('[data-vsl]').forEach(function(v){ var b=v.querySelector('.vsl-play'), msg=v.querySelector('.vsl-msg'); b.addEventListener('click',function(){ msg.hidden=false; v.classList.add('tried'); track('vsl_play_click'); }); });
 qa('[data-amap]').forEach(function(a){ var imgs=a.querySelectorAll('.amap-img'), btns=a.querySelectorAll('button[data-z]');
@@ -496,44 +498,50 @@ fmode(); window.addEventListener('hashchange',fmode);
 var TR=[
  {label:'Roof replacement',t:'Your roofing work',q1:'How many roofs do you replace in a typical month?',o1:['1 to 4','5 to 10','11 to 25','More than 25'],q2:'What happens today when a roof still has years left?',o2:['We tell them to call back later','We sell a repair','We try to sell a replacement anyway','We have nothing to offer'],line:'You already walk aging roofs every week. NANOROOF gives you a job for the ones that aren&rsquo;t ready to replace.'},
  {label:'Roof repair and maintenance',t:'Your repair work',q1:'How many repair or maintenance jobs do you complete in a typical month?',o1:['1 to 5','6 to 15','16 to 30','More than 30'],q2:'How often do you see roofs that are aging but sound?',o2:['Almost every job','Often','Sometimes','Rarely'],line:'You&rsquo;re already on the roofs that fit. Preservation turns a repair into the bigger job.'},
- {label:'Exterior cleaning and soft wash',t:'Your cleaning work',q1:'How many roof washes do you complete in a typical month?',o1:['None yet','1 to 5','6 to 15','More than 15'],q2:'What do you offer after a roof is clean?',o2:['Nothing yet','A sealer or coating','We refer it out','A maintenance plan'],line:'The soft wash is already step three of every NANOROOF job. You&rsquo;d add what comes next.'},
+ {label:'Exterior cleaning and soft wash',t:'Your cleaning work',q1:'How many roof washes do you complete in a typical month?',o1:['None yet','1 to 5','6 to 15','More than 15'],q2:'What do you offer after a roof is clean?',o2:['Nothing yet','A roof coating or rejuvenator','We refer it out','A maintenance plan'],line:'The soft wash is already step three of every NANOROOF job. You&rsquo;d add what comes next.'},
  {label:'Gutters',t:'Your gutter work',q1:'How many gutter jobs do you complete in a typical month?',o1:['1 to 10','11 to 30','31 to 60','More than 60'],q2:'Do you work on the roof itself today?',o2:['Yes, regularly','Occasionally','Not yet'],line:'You&rsquo;re at the roof edge on every job. NANOROOF lets you go up and offer the rest.'},
  {label:'Solar installation',t:'Your solar work',q1:'How many solar installs do you complete in a typical month?',o1:['1 to 4','5 to 10','11 to 25','More than 25'],q2:'What happens when the roof under the panels is aging?',o2:['We refer a roofer','We decline the job','The customer replaces first','We go ahead anyway'],line:'An aging roof stalls a solar sale. Preservation lets you confirm the roof has life left first.'},
- {label:'Commercial roofing',t:'Your commercial work',q1:'How many commercial roofs do you work on in a typical month?',o1:['1 to 2','3 to 5','6 to 10','More than 10'],q2:'What do you install most today?',o2:['Single-ply membranes','Coatings and restoration','Built-up and modified','A mix'],line:'The PPS System gives you a seamless restoration option before a tear-off.'},
  {label:'Something else',t:'Your business',q1:'How many jobs does your company complete in a typical month?',o1:['1 to 5','6 to 15','16 to 30','More than 30'],q2:'Do you work on roofs today?',o2:['Yes, regularly','Occasionally','Not yet'],line:'We&rsquo;ll look at how NANOROOF fits the work you already do.'}];
-var JOBS=[['Shingle preservation','The SPS System on aging asphalt roofs'],['10-point tune-ups and repairs','Flashings, nail heads and loose shingles'],['Soft wash','Algae and moss off, granules on'],['Color restoration','Four colors to start'],['Care Plan check-ups','Scheduled visits on roofs you&rsquo;ve treated'],['Commercial flat roofs','The PPS System, a separate certification']];
-var Q={crew:['Just me','2 to 5','6 to 15','16 or more'],rev:['Under $250K','$250K to $1M','$1M to $3M','Over $3M'],time:['Within 30 days','In 1 to 3 months','Just researching for now'],cap:['Yes, I could place it','Yes, within 30 to 60 days','Not right now']};
+var JOBS=[['Shingle preservation','The SPS System on aging asphalt roofs'],['10-point tune-ups and repairs','Flashings, nail heads and loose shingles'],['Soft wash','Algae and moss off, granules on'],['Color restoration','Ask your dealer for approved options'],['Care Plan check-ups','Scheduled visits on roofs you&rsquo;ve treated']];
+var Q={crew:['Just me','2 to 5','6 to 15','16 or more'],volume:['0','1–2','3–5','6–10','10+'],time:['Within 30 days','In 1 to 3 months','Just researching for now'],ack:['Yes','Yes, but I’d want to talk through payment options','I’d rather start smaller','Not right now']};
 qa('form[data-dapp]').forEach(function(f){
-  var st=1, a=SS.get('a')||{}, jobs=SS.get('jobs')||[];
+  try{sessionStorage.removeItem('nrdl_a');sessionStorage.removeItem('nrdl_jobs');sessionStorage.removeItem('nrdl_contact');sessionStorage.removeItem('nrdl_when');}catch(e){}
+  var st=1, a=SS.get('answers_v2')||{}, jobs=SS.get('jobs_v2')||[];
+  if(!a||typeof a!=='object'||Array.isArray(a)||!Number.isInteger(a.trade)||a.trade<0||a.trade>=TR.length)a={};
+  if(!Array.isArray(jobs))jobs=[];
+  function choice(key,list){return Number.isInteger(a[key])&&a[key]>=0&&a[key]<list.length;}
+  function outcome(){return a.ack===2?'smaller':a.ack===3?'later':a.volume===0?'review':'continue';}
   var prog=f.parentElement.querySelectorAll('.fn-prog i'), back=f.querySelector('.fn-back'), next=f.querySelector('.fn-next');
   function opts(box,list,key){ box.innerHTML=list.map(function(l,i){ return '<button type="button" class="fn-opt'+(a[key]===i?' sel':'')+'" data-i="'+i+'"><span class="rd"></span>'+l+'</button>'; }).join('');
-    box.querySelectorAll('.fn-opt').forEach(function(b){ b.onclick=function(){ a[key]=+b.getAttribute('data-i'); if(key==='trade'){ delete a.a1; delete a.a2; } SS.set('a',a); render(); }; }); }
+    box.querySelectorAll('.fn-opt').forEach(function(b){ b.onclick=function(){ a[key]=+b.getAttribute('data-i'); if(key==='trade'){ delete a.a1; delete a.a2; } SS.set('answers_v2',a); render(); }; }); }
   function multi(box){ box.innerHTML=JOBS.map(function(j,i){ var on=jobs.indexOf(i)>=0; return '<button type="button" class="fn-opt m'+(on?' sel':'')+'" data-i="'+i+'"><span class="tk">'+(on?'&#10003;':'')+'</span><span><b>'+j[0]+'</b><em>'+j[1]+'</em></span></button>'; }).join('');
-    box.querySelectorAll('.fn-opt').forEach(function(b){ b.onclick=function(){ var i=+b.getAttribute('data-i'); var k=jobs.indexOf(i); if(k>=0) jobs.splice(k,1); else jobs.push(i); SS.set('jobs',jobs); render(); }; }); }
+    box.querySelectorAll('.fn-opt').forEach(function(b){ b.onclick=function(){ var i=+b.getAttribute('data-i'); var k=jobs.indexOf(i); if(k>=0) jobs.splice(k,1); else jobs.push(i); SS.set('jobs_v2',jobs); render(); }; }); }
   function contactOk(){ return ['dp-fn','dp-ln','dp-co','dp-em','dp-ph','dp-cty'].every(function(id){ var v=f.querySelector('#'+id).value.trim(); return id==='dp-em'?/.+@.+\..+/.test(v):v.length>0; }); }
-  function ok(){ return {1:a.trade!=null,2:a.a1!=null&&a.a2!=null,3:jobs.length>0,4:a.crew!=null&&a.rev!=null,5:a.time!=null&&a.cap!=null,6:contactOk()}[st]; }
+  function ok(){ return {1:choice('trade',TR),2:choice('a1',TR[a.trade==null?0:a.trade].o1)&&choice('a2',TR[a.trade==null?0:a.trade].o2),3:jobs.length>0&&jobs.every(function(i){return Number.isInteger(i)&&i>=0&&i<JOBS.length;}),4:choice('crew',Q.crew)&&choice('volume',Q.volume),5:choice('time',Q.time)&&choice('ack',Q.ack),6:contactOk()}[st]; }
   function render(){
     var tr=TR[a.trade==null?0:a.trade];
     f.querySelectorAll('.fn-step').forEach(function(s){ s.hidden=(+s.getAttribute('data-s')!==st); });
     opts(f.querySelector('[data-q=trade]'),TR.map(function(x){return x.label;}),'trade');
     f.querySelector('[data-t=title]').innerHTML=tr.t; f.querySelector('[data-t=q1]').innerHTML=tr.q1; f.querySelector('[data-t=q2]').innerHTML=tr.q2;
     opts(f.querySelector('[data-q=a1]'),tr.o1,'a1'); opts(f.querySelector('[data-q=a2]'),tr.o2,'a2'); multi(f.querySelector('[data-q=jobs]'));
-    opts(f.querySelector('[data-q=crew]'),Q.crew,'crew'); opts(f.querySelector('[data-q=rev]'),Q.rev,'rev'); opts(f.querySelector('[data-q=time]'),Q.time,'time'); opts(f.querySelector('[data-q=cap]'),Q.cap,'cap');
+    opts(f.querySelector('[data-q=crew]'),Q.crew,'crew'); opts(f.querySelector('[data-q=volume]'),Q.volume,'volume'); opts(f.querySelector('[data-q=time]'),Q.time,'time'); opts(f.querySelector('[data-q=ack]'),Q.ack,'ack');
     prog.forEach(function(p){ p.classList.toggle('on',+p.getAttribute('data-b')<=Math.min(st,6)); });
     var res=st===7; f.querySelector('.fn-nav').hidden=res; back.hidden=(st===1);
     next.textContent=st===6?'See my result':'Continue'; next.disabled=!ok();
-    var qual=a.cap!==2 && a.rev!==0 && a.time!==2 && !(a.a1===0 && a.crew===0);
+    var result=outcome(),qual=result==='continue'||result==='review';
     f.querySelector('.fn-res.ok').hidden=!(res&&qual); f.querySelector('.fn-res.nf').hidden=!(res&&!qual);
     if(res){ var names=jobs.slice().sort().map(function(i){return JOBS[i][0].toLowerCase();}); var pk=names.length===1?names[0]:names.slice(0,-1).join(', ')+' and '+names[names.length-1];
       f.querySelector('[data-t=okline]').innerHTML=tr.line+(pk?' You picked '+pk+'.':'');
-      f.querySelector('[data-t=nfline]').innerHTML=(a.cap===2?'The opening order is the main commitment, and the timing isn&rsquo;t right yet.':a.time===2?'You&rsquo;re still researching, which is a good reason to try a job or two first.':a.rev===0?'For a business your size, a job or two first is the lower-risk start.':'A job or two first is the best way to see how it fits your crew.'); }
+      f.querySelector('[data-t=nfline]').textContent=result==='smaller'?'You would rather start smaller. Discuss available options with the dealer team.':'Not right now. Contact the dealer team when you want to revisit the opening order.';
+      if(result==='review') f.querySelector('[data-t=okline]').textContent='Zero monthly asphalt shingle jobs: setter review required. This is not an automatic rejection.';
+      f.querySelector('.fn-res.ok').setAttribute('data-outcome',result);f.querySelector('.fn-res.nf').setAttribute('data-outcome',result); }
   }
   f.addEventListener('input',function(){ if(st===6) next.disabled=!ok(); });
   back.onclick=function(){ if(st>1){ st--; render(); scrollTo({top:0}); } };
   f.addEventListener('submit',function(e){ e.preventDefault(); if(!ok()) return; if(st<6){ st++; render(); scrollTo({top:0}); return; }
-    st=7; var qual=a.cap!==2 && a.rev!==0 && a.time!==2 && !(a.a1===0 && a.crew===0);
+    st=7; var result=outcome(),qual=result==='continue'||result==='review';
     SS.set('contact',{fn:f.querySelector('#dp-fn').value.trim(),co:f.querySelector('#dp-co').value.trim()});
-    track(qual?'dealer_app_fit':'dealer_app_nofit',{trade:TR[a.trade].label,crew:Q.crew[a.crew],rev:Q.rev[a.rev],time:Q.time[a.time],cap:Q.cap[a.cap],jobs:jobs.length,sms_consent:f.querySelector('#dp-cons').checked});
+    track(qual?'dealer_app_fit':'dealer_app_nofit',{trade:TR[a.trade].label,crew:Q.crew[a.crew],time:Q.time[a.time],outcome:result,jobs:jobs.length,sms_consent:f.querySelector('#dp-cons').checked});
     render(); scrollTo({top:0}); });
   render();
 });
@@ -556,13 +564,8 @@ showWhen(); window.addEventListener('hashchange',showWhen);
 })();
 /* roof material calculator (dealer page) */
 qa('[data-rcalc]').forEach(function(c){ var sec=c.closest('section'), r=c.querySelector('input'), o=function(k){return sec.querySelector('[data-o="'+k+'"]');}, fmt=function(n){return n.toLocaleString('en-US');};
-  function upd(){ var sq=+r.value, area=sq*100, gal=area/160, cost=gal*96; o('sq').textContent=sq; o('area').textContent=fmt(area)+' sq ft'; o('gal').textContent='\u2248 '+Math.round(gal)+' gal'; o('cost').textContent='\u2248 $'+fmt(Math.round(cost/10)*10); }
+  function upd(){ var sq=+r.value, area=sq*100, gal=area/160*1.10; o('sq').textContent=sq; o('area').textContent=fmt(area)+' sq ft'; o('gal').textContent='\u2248 '+Math.round(gal)+' gal'; }
   r.addEventListener('input',upd); r.addEventListener('change',function(){ track('dealer_calc',{squares:+r.value}); }); upd(); });
-/* dealer seat calculator: set data-cap="250000" (people per Certified Dealer) to activate */
-qa('[data-seats]').forEach(function(s){ var cap=+s.getAttribute('data-cap'), r=s.querySelector('input'), seats=s.querySelector('[data-o=seats]'), pop=s.querySelector('[data-o=pop]');
-  function upd(){ pop.textContent=(+r.value).toLocaleString('en-US'); if(cap>0) seats.textContent=Math.max(1,Math.floor(+r.value/cap)); }
-  r.addEventListener('input',upd); upd(); });
-
 ;
 
 (function(){
