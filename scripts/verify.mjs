@@ -18,7 +18,16 @@ try{
  };
  for(const [file,pattern] of Object.entries(copyChecks))assert(!pattern.test(await readFile(root+'/'+file,'utf8')),file+' retains reviewed claim');
  const contractor=await readFile(root+'/contractors/index.html','utf8');assert.equal((contractor.match(/<summary>What is the opening product order\?<\/summary>/g)||[]).length,1);assert.match(contractor,/<strong>Assess<\/strong>/);assert.match(contractor,/<strong>Spray application<\/strong>/);
- async function durationScan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())await durationScan(file);else if(/\.(html|js)$/.test(entry.name))assert(!/one[- ]day|one visit|single visit|single day|both prices/i.test(await readFile(file,'utf8')),file+' retains timing or comparator promise');}}await durationScan(root);
+ async function durationScan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())await durationScan(file);else if(/\.(html|js)$/.test(entry.name))assert(!/one[- ]day|one visit|\b1 visit\b|single visit|single day|both prices/i.test(await readFile(file,'utf8')),file+' retains timing or comparator promise');}}await durationScan(root);
+ async function structuredScan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){
+  const file=path.join(dir,entry.name);if(entry.isDirectory()){await structuredScan(file);continue;}if(!file.endsWith('.html'))continue;
+  const html=await readFile(file,'utf8');
+  for(const block of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)){
+   const data=JSON.parse(block[1]);const check=node=>{if(!node||typeof node!=='object')return;if(node['@type']==='Answer')assert(typeof node.text==='string'&&node.text.trim(),file+' has empty Answer');if(node['@type']==='Question'&&node.name==='What does the warranty cover?')assert.equal(node.acceptedAnswer.text,'10-year standard; 15 and 20 on qualifying roofs; 5-year on Level-5 roofs.');for(const value of Object.values(node))if(Array.isArray(value))value.forEach(check);else check(value);};check(data);
+  }
+  for(const text of html.replace(/<script[\s\S]*?<\/script>|<svg[\s\S]*?<\/svg>/g,'').matchAll(/>([^<>]+)</g))assert(!/\b([\w-]+)\s+\1\b/i.test(text[1]),file+' has duplicate words: '+text[1]);
+  for(const detail of html.matchAll(/<details>([\s\S]*?)<\/details>/g))if(detail[1].includes('a tote covers about 43,000 sq ft'))assert(/<summary>(?:How far does one tote go\?|What is the opening product order\?)<\/summary>/.test(detail[1]),file+' has misplaced coverage answer');
+ }}await structuredScan(root);
  const context=await b.newContext({viewport:{width:390,height:844}});await context.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
  const page=await context.newPage();page.on('pageerror',e=>errors.push({url:page.url(),message:e.message,stack:e.stack}));
  for(const route of ['commercial','polyurea']){await page.goto(base+'/'+route+'/');const text=await page.locator('main').innerText();assert.match(text,/unavailable/i);assert(!/PPS|450|VOC|waterproof/i.test(text));}
