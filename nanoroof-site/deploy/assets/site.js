@@ -6,7 +6,7 @@ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ---------- FAQ content ---------- */
 var FAQ={
- cost:['How much does it cost?','It depends on your roof\u2019s size, pitch, condition and local labor. The instant estimate gives a rough range for preservation and replacement side by side; your dealer confirms the price after the free assessment. Repairs found at the assessment are priced separately.'],
+ cost:['How much does it cost?','It depends on your roof\u2019s size, pitch, condition and local labor. Your dealer confirms the price after the free assessment. Repairs found at the assessment are priced separately.'],
  leak:['Will it stop my roof from leaking?','No. Most roof leaks come from flashings around chimneys, skylights and walls, not from the shingles. Your dealer repairs those first during the tune-up, and the assessment will point them out.'],
  new:["Can I treat a new roof?", "A dealer can check your roof and tell you when it makes sense."],
  old:['My roof is over 20 years old. Is it too late?','Not always. It depends on condition rather than age: granule loss, brittleness and the decking underneath. The assessment answers it for your roof.'],
@@ -28,7 +28,7 @@ var FAQ={
  w3:['Does my shingle manufacturer\u2019s warranty matter?','The NANOROOF warranty stays valid even if your shingle manufacturer\u2019s warranty has expired or can\u2019t be transferred.'],
  w4:['What isn\u2019t covered?','Acts of God and natural disasters, roof leaks, structural failures, failures of earlier coatings, unforeseen environmental conditions, and damage from faulty application or inadequate repairs.'],
  insure:['Will my insurance company accept a preserved roof?','Each insurer sets its own rules on roof age and condition, so we can\u2019t promise how yours will treat it. Your Roof Record gives an inspector the photos, readings and warranty from the job.'],
- day:['What happens on the day?','The crew washes and preps the roof, checks shingle moisture, sprays the treatment, leaves a test sample and records the readings. Most homes are done in one visit, with no tear-off.'],
+ day:['What happens on the day?','The crew washes and preps the roof, checks shingle moisture, sprays the treatment, leaves a test sample and records the readings. No tear-off.'],
  temp:["Can NANOROOF be applied in winter?", "Spray-applied; it isn’t applied in cold weather."],
  buy:['Can I buy NANOROOF and apply it myself?','No. NANOROOF products are professional-grade and sold only to trained, certified NANOROOF Certified Dealers, not to homeowners or at retail. The result depends on the whole protocol: the assessment, repairs, soft wash, baseline readings, metered application and registration. Only a certified dealer can register the job, and the warranty depends on that registration.'],
  tune1:['What does a tune-up include?','Flashings inspected and repaired, gutters cleared, damaged shingles replaced, loose shingles secured, penetrations repaired, attic ventilation checked, valleys cleared, eaves and soffits inspected, branches trimmed and drainage checked.'],
@@ -117,7 +117,7 @@ var NEXT={
  assessment:['Book your free assessment','A certified dealer inspects the roof and gives you a written answer.','#/find-a-dealer','Find a dealer','#/estimate','Get an estimate first'],
  'tune-up':['Book a tune-up','Every preservation job starts with one.','#/find-a-dealer','Find a dealer','#/care-plan','About the Care Plan'],
  cleaning:['Clean, then preserve','Washing is included in every preservation job.','#/estimate','Get my estimate','#/preservation','How preservation works'],
- preservation:['See what your roof would cost','Preservation and replacement, side by side.','#/estimate','Get my estimate','#/warranty','See the warranty'],
+ preservation:['See what your roof would cost','A certified dealer assesses whether your roof qualifies.','#/estimate','Get my estimate','#/warranty','See the warranty'],
  'care-plan':['Keep your roof on the record','Ask your dealer about the Care Plan.','#/find-a-dealer','Find a dealer','#/warranty','See the warranty'],
  warranty:['Start with an estimate','Then book the free assessment.','#/estimate','Get my estimate','#/faq','Read the FAQ'],
  'property-owners':['Talk about your portfolio','We\u2019ll come back within two business days.','#/property-owners/request','Request a savings report','#/contact','Contact us'],
@@ -126,7 +126,6 @@ var NEXT={
  about:['See what NANOROOF would do for your roof','Start with an estimate.','#/estimate','Get my estimate','#/contractors','Become a dealer'],
  sustainability:['Keep your roof','Start with an estimate.','#/estimate','Get my estimate','#/how-it-works','How it works'],
  'find-a-dealer':['Not sure yet?','See a rough estimate first.','#/estimate','Get my estimate','#/faq','Read the FAQ'],
- commercial:['Get the survey before you get the bids','A free moisture survey and written report for your flat roof.','#/commercial/survey','Request a roof survey','#/property-owners','Portfolios and HOAs'],
  'repair-products':['Have the small problems sealed','Every NANOROOF job starts with a 10-point tune-up.','#/tune-up','See the tune-up','#/find-a-dealer','Find a dealer'],
  'cleaning-products':['See what a soft wash can do','Cleaning is part of every preservation job.','#/cleaning','How roof cleaning works','#/estimate','Get my estimate'],
  'technical-data':['Need the full data sheets?','Technical and safety data sheets on request.','#/technical-data/request','Request data sheets','#/architects','For architects'],
@@ -137,13 +136,13 @@ var NEXT={
  'algae-streaks':['Get the streaks off safely','Soft wash, then preserve.','#/cleaning','How roof cleaning works','#/estimate','Get my estimate'],
  'curling-cracking':['Is it too late?','A dealer checks flexibility and tells you honestly.','#/assessment','Book an assessment','#/roof-check','Check a photo'],
  'roof-leaks':['Fix the leak first','The tune-up finds and seals it.','#/tune-up','See the tune-up','#/find-a-dealer','Find a dealer'],
- sps:['See what the SPS System would cost on your roof','Preservation and replacement, side by side.','#/estimate','Get my estimate','#/find-a-dealer','Find a dealer'],
- silicone:['Put silicone to work on your roof','See what preservation would cost next to replacement.','#/estimate','Get my estimate','#/products','See the SPS System'],
+ sps:['See what the SPS System would cost on your roof','A certified dealer assesses whether your roof qualifies.','#/estimate','Get my estimate','#/find-a-dealer','Find a dealer'],
+ silicone:['Put silicone to work on your roof','Ask a certified dealer about preservation.','#/estimate','Get my estimate','#/products','See the SPS System'],
  'roof-system':['Have your roof checked as a system','A free assessment covers the shingles, structure, flashings, ventilation and workmanship.','#/assessment','Book an assessment','#/estimate','Get my estimate'],
- colors:['See what your roof would cost','Preservation and replacement, side by side. Add a color at the assessment.','#/estimate','Get my estimate','#/find-a-dealer','Find a dealer'],
+ colors:['See what your roof would cost','Ask your dealer for approved color options and a sample on your roof.','#/estimate','Get my estimate','#/find-a-dealer','Find a dealer'],
  moisture:['See how NANOROOF compares','Coatings, penetrants and NANOROOF, side by side.','#/how-it-works/compare','See the comparison','#/estimate','Get my estimate'],
  'field-data':['Start your roof\u2019s record','Every registered roof gets a Roof Record from day one.','#/estimate','Get my estimate','#/find-a-dealer','Find a dealer'],
- homeowners:['See what your roof would cost','Preservation and replacement, side by side.','#/estimate','Get my estimate','#/faq','Read the FAQ'],
+ homeowners:['See what your roof would cost','A certified dealer assesses whether your roof qualifies.','#/estimate','Get my estimate','#/faq','Read the FAQ'],
  architects:['Need documents for a project?','Technical and safety data, protocol and sample warranties.','#/architects/project','Discuss a project','#/products','See the product line'],
  'referral-partners':['Become a referral partner','Tell us about your business.','#/contact','Talk to us','#/contractors','Become a dealer']
 };
@@ -152,54 +151,6 @@ Object.keys(NEXT).forEach(function(k){
   var s=document.createElement('section'); s.className='next';
   s.innerHTML='<div class="wrap"><div class="ctapanel nextpanel"><div><h2>'+n[0]+'</h2><p>'+n[1]+'</p></div><div class="acts"><a class="btn btn-green" href="'+n[2]+'">'+n[3]+'</a><a class="btn btn-line" href="'+n[4]+'">'+n[5]+'</a></div></div></div>';
   pg.appendChild(s);
-});
-
-/* ---------- estimator component ---------- */
-var RATES={presLow:1.40,presHigh:1.60,replLow:5.50,replHigh:7.50}; // placeholder rates
-var fmt=function(v){return '$'+(Math.round(v/100)*100).toLocaleString('en-US');};
-qa('[data-estimator]').forEach(function(host){
-  var id=host.getAttribute('data-estimator');
-  host.innerHTML='<div class="est"><h2>Your roof, two ways</h2><p class="sub">Four questions. No account and no phone number needed to see the numbers.</p>'+
-  '<form novalidate><div class="row2"><div class="field"><label for="sq-'+id+'">Home size (sq ft)</label><input id="sq-'+id+'" type="number" inputmode="numeric" min="400" max="20000" placeholder="e.g. 2,000"></div>'+
-  '<div class="field"><label for="st-'+id+'">Stories</label><select id="st-'+id+'"><option value="1">1 story</option><option value="2" selected>2 stories</option><option value="3">3 stories</option></select></div></div>'+
-  '<fieldset class="field"><legend>Roof shape</legend><div class="chips"><label><input type="radio" name="shape-'+id+'" value="1.18"><span>Simple</span></label><label><input type="radio" name="shape-'+id+'" value="1.3" checked><span>Average</span></label><label><input type="radio" name="shape-'+id+'" value="1.45"><span>Steep or complex</span></label></div></fieldset>'+
-  '<fieldset class="field"><legend>Roof age</legend><div class="chips"><label><input type="radio" name="age-'+id+'" value="0-5"><span>0-5 yrs</span></label><label><input type="radio" name="age-'+id+'" value="6-11"><span>6-11</span></label><label><input type="radio" name="age-'+id+'" value="12-17" checked><span>12-17</span></label><label><input type="radio" name="age-'+id+'" value="18-25"><span>18-25</span></label><label><input type="radio" name="age-'+id+'" value="25+"><span>25+</span></label></div></fieldset>'+
-  '<div class="field"><label for="cn-'+id+'">Main concern</label><select id="cn-'+id+'"><option value="age">Roof is getting old</option><option value="granules">Granule loss or faded shingles</option><option value="algae">Algae or moss</option><option value="leak">A leak</option><option value="damage">Missing or damaged shingles</option></select></div>'+
-  '<div class="field"><label for="fn-'+id+'">Finish</label><select id="fn-'+id+'"><option value="clear">Clear: keep my roof\u2019s current color</option><option value="Charcoal">Color: Charcoal</option><option value="Weathered Wood">Color: Weathered Wood</option><option value="Pewter Gray">Color: Pewter Gray</option><option value="Barkwood">Color: Barkwood</option></select></div>'+
-  '<button class="btn btn-green" type="submit">Show my two numbers</button><p class="err" role="alert"></p></form>'+
-  '<div class="result" hidden aria-live="polite"><span class="conf">Rough range: based on home size, not a roof measurement</span><p class="verdict"></p>'+
-  '<div class="bar-row"><div class="bar-top"><b>Preserve with NANOROOF</b><span class="amt pa"></span></div><div class="track"><div class="span pres"></div></div></div>'+
-  '<div class="bar-row"><div class="bar-top"><b>Replace the roof</b><span class="amt ra"></span></div><div class="track"><div class="span repl"></div></div></div>'+
-  '<p class="note an"></p><a class="btn btn-blue" href="#/find-a-dealer">Book a free roof-life assessment</a>'+
-  '<p class="proto">Prototype: ranges use placeholder rates and your home size, not a measured roof. The live version measures your roof from your address and uses your local dealer\u2019s pricing.</p></div></div>';
-  var form=host.querySelector('form'), res=host.querySelector('.result'), err=host.querySelector('.err');
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var sq=$('sq-'+id), sqft=parseFloat(sq.value);
-    if(!sqft||isNaN(sqft)){err.textContent='Enter your home size in square feet, for example 2000.';sq.focus();return;}
-    if(sqft<400||sqft>20000){err.textContent='Enter a home size between 400 and 20,000 sq ft. For larger buildings, request a portfolio savings report.';sq.focus();return;}
-    err.textContent='';
-    var stories=parseInt($('st-'+id).value,10)||1;
-    var sh=host.querySelector('input[name="shape-'+id+'"]:checked'), ag=host.querySelector('input[name="age-'+id+'"]:checked');
-    var shape=sh?parseFloat(sh.value):1.3, age=ag?ag.value:'12-17', concern=$('cn-'+id).value;
-    var area=sqft/stories*shape*1.08, aL=area*0.85, aH=area*1.15;
-    var pL=aL*RATES.presLow,pH=aH*RATES.presHigh,rL=aL*RATES.replLow,rH=aH*RATES.replHigh,max=rH;
-    host.querySelector('.pa').textContent=fmt(pL)+' to '+fmt(pH);
-    host.querySelector('.ra').textContent=fmt(rL)+' to '+fmt(rH);
-    var pb=host.querySelector('.pres'), rb=host.querySelector('.repl');
-    pb.style.left=(pL/max*100)+'%'; pb.style.width=Math.max((pH-pL)/max*100,1.5)+'%';
-    rb.style.left=(rL/max*100)+'%'; rb.style.width=((rH-rL)/max*100)+'%';
-    host.querySelector('.an').textContent='Estimated roof area: about '+(Math.round(aL/100)*100).toLocaleString('en-US')+' to '+(Math.round(aH/100)*100).toLocaleString('en-US')+' sq ft, worked out from your home size and roof shape.';
-    var v;
-    if(age==='0-5') v='Your roof is likely too new to need treatment yet. An assessment can tell you when the time is right.';
-    else if(age==='25+') v='At this age it depends on condition. Some roofs this old still qualify; an assessment will tell you.';
-    else v='Roofs in this age range are often good candidates, if the assessment finds the shingles and decking sound.';
-    if(concern==='leak') v+=' Leaks usually come from flashings and are repaired first; preservation does not fix them.';
-    if(concern==='damage') v+=' Missing or damaged shingles are replaced before treatment and priced separately.';
-    var fin=$('fn-'+id); if(fin&&fin.value!=='clear') v+=' Color: '+fin.value+'. Your dealer quotes color at the assessment and can show you a sample on your roof.';
-    host.querySelector('.verdict').textContent=v;
-    res.hidden=false; res.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
-  });
 });
 
 /* ---------- demo forms + zip ---------- */
@@ -237,11 +188,11 @@ if(af){ af.addEventListener('submit',function(e){ e.preventDefault();
   var v=document.getElementById('addr').value.trim(), er=document.getElementById('addrErr');
   if(v.length<6||!/\d/.test(v)){ er.textContent='Enter your street address, for example 120 Oak Street, Springfield.'; document.getElementById('addr').focus(); return; }
   er.textContent=''; try{sessionStorage.setItem('nr_estimate_address',v);}catch(e){} window.__roofAddr=v; location.href='/estimate/'; }); }
-function showAddr(){ var host=document.querySelector('[data-estimator="page"]'); if(!host) return;
+function showAddr(){ var host=document.querySelector('[data-address-handoff]'); if(!host) return;
   var box=document.getElementById('estAddr');
   if(!box){ box=document.createElement('div'); box.id='estAddr'; box.className='est-addr'; host.parentNode.insertBefore(box,host); }
   try{window.__roofAddr=window.__roofAddr||sessionStorage.getItem('nr_estimate_address');}catch(e){}
-  if(window.__roofAddr){ box.innerHTML='<b>Estimate for:</b> '+window.__roofAddr.replace(/[<>&]/g,'')+'<br><span style="font-size:.9rem">The live version measures this roof from satellite data. For now, add your home size below.</span>'; box.classList.add('on'); }
+  if(window.__roofAddr){ box.innerHTML='<b>Address:</b> '+window.__roofAddr.replace(/[<>&]/g,'')+'<br><span style="font-size:.9rem">No roof measurement or price calculation is connected in this preview.</span>'; box.classList.add('on'); }
 }
 showAddr();
 
@@ -339,9 +290,9 @@ var qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s));};
 (function(){
 var T={ 'how-it-works':['Why shingles fail','The seven-stage aging loop'],'silicone':['Why silicone','The chemistry behind the SPS System'],'repair-products':['Roof repair products','Caulk and liquid flashing'],'cleaning-products':['Cleaning products','Roof cleaner'],'technical-data':['Technical data','Properties and data sheets'],'science':['The science','Silicone for shingles'],'granule-loss':['Granule loss','Granules in the gutters'],'algae-streaks':['Algae and moss','Dark streaks and green growth'],'curling-cracking':['Curling and cracking','Dried-out shingles'],'roof-leaks':['Roof leaks','A repair problem first'],'roof-check':['Photo roof check','Screen your roof from a photo'],'roof-system':['The roof as a system','Why every job checks the whole roof'],
  'qualify':['Does my roof qualify?','Who it\u2019s for, and who it isn\u2019t'],'products':['Products','The SPS System and repair products'],'assessment':['Roof-life assessment','Free, written, with photos'],
- 'tune-up':['10-point tune-up','Small problems, fixed early'],'cleaning':['Roof cleaning','Low-pressure soft wash'],'preservation':['NANOROOF preservation','The one-day application, step by step'],
+ 'tune-up':['10-point tune-up','Small problems, fixed early'],'cleaning':['Roof cleaning','Low-pressure soft wash'],'preservation':['NANOROOF preservation','The application protocol, step by step'],
  'care-plan':['Care Plan','Check-ups and your Roof Record'],'sps':['The SPS System','What the letters mean'],'colors':['Roof colors','Ask for approved color options'],
- 'warranty':['Warranty','10, 15 and 20-year terms'],'property-owners':['Portfolios and HOAs','Portfolios, HOAs and multifamily'],'estimate':['Instant estimate','Preservation vs. replacement'],
+ 'warranty':['Warranty','10-year standard; 15 and 20 on qualifying roofs; 5-year on Level-5 roofs'],'property-owners':['Portfolios and HOAs','Portfolios, HOAs and multifamily'],'estimate':['Roof assessment','Dealer assessment and pricing'],
  'faq':['FAQ','Straight answers'],'learn':['Guides','Plain answers for homeowners'],'moisture':['The moisture myth','The SPS System'],'field-data':['Field Data','Condition, measured'],
  'find-a-dealer':['Find a dealer','Certified dealers near you'],'about':['About NANOROOF','Who we are and what we believe'],'sustainability':['Sustainability','A roof kept is a roof not landfilled'],
  'contact':['Contact','Reach the right person'],'contractors':['Become a dealer','Become a NANOROOF Certified Dealer'],
@@ -350,9 +301,9 @@ var F={ 'how-it-works':['7-stage aging loop','Bonds inside, encapsulates','Targe
  'repair-products':['Professional-grade','Used in every tune-up','Damp and cold tolerant caulk'],'cleaning-products':['Professional-grade','Roof cleaning','Clean before every treatment'],'technical-data':['Professional-grade','Repair and cleaning products','Data sheets on request'],'science':['Silicone for shingles','Residential asphalt shingles','One chemistry per roof'],'granule-loss':['UV loosens granules','Early loss is treatable','Free assessment'],'algae-streaks':['Soft wash, not pressure','Granules stay on','Encapsulated against regrowth'],'curling-cracking':['Catch it early','Secured in the tune-up','Checked for flexibility'],'roof-leaks':['Most start at flashings','Repaired first','Then decide'],'roof-check':['Takes about a minute','Screening, not an assessment','Free'],'roof-system':['8 parts of the roof checked','Repairs before treatment','An honest no when it won\u2019t work'],'qualify':['Free assessment','A written yes or no','Repairs priced separately'],
  'products':['Professional-grade','Sold only to certified dealers','The SPS System'],'assessment':['Free','25-point inspection scored out of 250','Written report with photos'],
  'tune-up':['10 points','Before every treatment','Recoat timing is set at the Care-Plan inspection'],'cleaning':['Low-pressure soft wash','roof cleaner','Landscaping protected'],
- 'preservation':['6 steps','Usually one visit','Every step on record'],'care-plan':['Scheduled check-ups','Readings compared to day one','The Care-Plan only adds coverage'],
+ 'preservation':['6 steps','Applied to the existing roof','Every step on record'],'care-plan':['Scheduled check-ups','Readings compared to day one','The Care-Plan only adds coverage'],
  'sps':['Professional-grade','Dealer-applied','Registered warranty'],'colors':['Ask for approved color options','Restores faded roofs','See a sample on your roof'],
- 'warranty':['10-year standard','15 and 20-year terms','Transferable when you sell'],'property-owners':['Multifamily, HOAs, portfolios','Roof Cost Savings Report','One program, many buildings'],
+ 'warranty':['10-year standard','15 and 20 on qualifying roofs','5-year on Level-5 roofs'],'property-owners':['Multifamily, HOAs, portfolios','Roof Cost Savings Report','One program, many buildings'],
  'moisture':['The SPS System','Water-based silicone','Dealer-applied'],'field-data':['Recorded on every job','Measured: being built','Underwritable: the goal'],
  'find-a-dealer':['Independent dealers','Trained and certified','Verify before you sign'],'about':['NANO Products, LLC dba NANOROOF','West Palm Beach, Florida','Independent dealer network'],
  'sustainability':['Preserve what still works','Shingles kept out of landfill','Residential asphalt shingles'],

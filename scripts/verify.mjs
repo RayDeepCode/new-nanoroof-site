@@ -9,10 +9,20 @@ try{
  for(const match of sitemap.matchAll(/<loc>(.*?)<\/loc>/g)){const url=new URL(match[1]);assert.equal((await fetch(base+url.pathname)).status,200);routes++;}assert.equal(routes,43);
  const forbidden=/26,290|\*96|nanodealers|450\s*psi|Exclusiv|\bPPS\b|250,000|annual revenue|data-q="(?:rev|cap)"/i;
  async function scan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())await scan(file);else if(/\.(html|js|xml)$/.test(entry.name))assert(!forbidden.test(await readFile(file,'utf8')),file+' has prohibited content');}}await scan(root);
+ const copyChecks={
+  'contractors/index.html':/all-in|14 average|40°F|1 per 250K|no other fee|Commercial flat roofs|color and commercial/,
+  'technical-data/index.html':/40°F|10-year labor and material; 15 and 20-year terms/,
+  'silicone/index.html':/Lets vapor out/,
+  'index.html':/liquid water and water vapor|four colors|capital/,
+  'assets/site.js':/presLow|replLow|placeholder rates|Color: Charcoal|commercial:\[/
+ };
+ for(const [file,pattern] of Object.entries(copyChecks))assert(!pattern.test(await readFile(root+'/'+file,'utf8')),file+' retains reviewed claim');
+ const contractor=await readFile(root+'/contractors/index.html','utf8');assert.equal((contractor.match(/<summary>What is the opening product order\?<\/summary>/g)||[]).length,1);assert.match(contractor,/<strong>Assess<\/strong>/);assert.match(contractor,/<strong>Spray application<\/strong>/);
+ async function durationScan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())await durationScan(file);else if(/\.(html|js)$/.test(entry.name))assert(!/one[- ]day|one visit|single visit|single day|both prices/i.test(await readFile(file,'utf8')),file+' retains timing or comparator promise');}}await durationScan(root);
  const context=await b.newContext({viewport:{width:390,height:844}});await context.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
  const page=await context.newPage();page.on('pageerror',e=>errors.push({url:page.url(),message:e.message,stack:e.stack}));
  for(const route of ['commercial','polyurea']){await page.goto(base+'/'+route+'/');const text=await page.locator('main').innerText();assert.match(text,/unavailable/i);assert(!/PPS|450|VOC|waterproof/i.test(text));}
- await page.goto(base+'/');await page.locator('#addr').fill('120 Oak Street, Springfield');await page.locator('#addrForm').evaluate(f=>f.requestSubmit());await page.waitForURL('**/estimate/');assert.match(await page.locator('#estAddr').innerText(),/120 Oak Street/);
+ await page.goto(base+'/');await page.locator('#addr').fill('120 Oak Street, Springfield');await page.locator('#addrForm').evaluate(f=>f.requestSubmit());await page.waitForURL('**/estimate/');assert.match(await page.locator('#estAddr').innerText(),/120 Oak Street/);assert.equal(await page.locator('.bar-row, [data-estimator], .est form').count(),0);
  assert.equal(await page.evaluate(()=>window.dataLayer.filter(x=>x.event==='page_view').at(-1).page),'estimate');
  await page.goto(base+'/faq/');await page.locator('#faqq').fill('PRIVATE-TEST-STRING');await page.waitForTimeout(1100);assert(!JSON.stringify(await page.evaluate(()=>window.dataLayer)).includes('PRIVATE-TEST-STRING'));
  // Exercise every new acknowledgment × monthly-volume combination, with fresh state.
