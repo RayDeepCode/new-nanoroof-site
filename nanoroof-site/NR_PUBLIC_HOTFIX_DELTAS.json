@@ -5648,6 +5648,70 @@
    "before": "<span>See whether your county still has room for a Certified Dealer. It takes about five minutes.</span>",
    "after": "",
    "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M17 granule-loss \"Photograph the roof\" step: photo check removed (Kaya df500b07)",
+   "file": "granule-loss/index.html",
+   "before": "<li><b>Photograph the roof</b><span>Our photo check can flag thinning areas</span></li>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M18 screening sentence about removed online estimate and photo roof check (Maat 3ffec18d)",
+   "file": "products/index.html",
+   "before": "<p>Online estimates and the photo roof check are screenings, not quotes or inspections. ",
+   "after": "<p>",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M18 screening sentence about removed online estimate and photo roof check (Maat 3ffec18d)",
+   "file": "technical-data/index.html",
+   "before": "<p>Online estimates and the photo roof check are screenings, not quotes or inspections. ",
+   "after": "<p>",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M19 \"Book an assessment\" relabelled to the nav label \"Roof-life assessment\"; href unchanged (Maat 3ffec18d SHOULD)",
+   "file": "algae-streaks/index.html",
+   "before": ">Book an assessment<",
+   "after": ">Roof-life assessment<",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M19 \"Book an assessment\" relabelled to the nav label \"Roof-life assessment\"; href unchanged (Maat 3ffec18d SHOULD)",
+   "file": "curling-cracking/index.html",
+   "before": ">Book an assessment<",
+   "after": ">Roof-life assessment<",
+   "count": 2
+  },
+  {
+   "item": "1",
+   "row": "NR-M19 \"Book an assessment\" relabelled to the nav label \"Roof-life assessment\"; href unchanged (Maat 3ffec18d SHOULD)",
+   "file": "roof-leaks/index.html",
+   "before": ">Book an assessment<",
+   "after": ">Roof-life assessment<",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M19 \"Book an assessment\" relabelled to the nav label \"Roof-life assessment\"; href unchanged (Maat 3ffec18d SHOULD)",
+   "file": "granule-loss/index.html",
+   "before": ">Book an assessment<",
+   "after": ">Roof-life assessment<",
+   "count": 2
+  },
+  {
+   "item": "1",
+   "row": "NR-M19 \"Book an assessment\" relabelled to the nav label \"Roof-life assessment\"; href unchanged (Maat 3ffec18d SHOULD)",
+   "file": "roof-system/index.html",
+   "before": ">Book an assessment<",
+   "after": ">Roof-life assessment<",
+   "count": 1
   }
  ]
 }
