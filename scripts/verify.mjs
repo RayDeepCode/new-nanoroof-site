@@ -5,8 +5,24 @@ const root=path.resolve('nanoroof-site/deploy'),errors=[],outcomes=[];let routes
 const service=createServer(async(req,res)=>{try{let file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));assert(file.startsWith(root+'/')||file===root);if((await stat(file)).isDirectory())file+='/index.html';const data=await readFile(file);res.setHeader('Content-Type',file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':file.endsWith('.html')?'text/html':'application/octet-stream');res.end(data);}catch{res.statusCode=404;res.end('Not found');}});
 await new Promise(r=>service.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+service.address().port,b=await chromium.launch();
 try{
- const sitemap=await readFile(root+'/sitemap.xml','utf8');assert(!/\/(commercial|polyurea)\//.test(sitemap));
- for(const match of sitemap.matchAll(/<loc>(.*?)<\/loc>/g)){const url=new URL(match[1]);assert.equal((await fetch(base+url.pathname)).status,200);routes++;}assert.equal(routes,43);
+ // SITES-PUBLIC-HOTFIX (Maat c40f4a8e items 1, 4, 5, 6): no sitemap; every remaining page directory serves 200 and the removed routes 404.
+ const pageDirs=(await readdir(root,{withFileTypes:true})).filter(e=>e.isDirectory()&&e.name!=='assets').map(e=>e.name);
+ const removedRoutes=['dealer-application','dealer-schedule','dealer-confirmed','find-a-dealer','estimate','roof-check','warranty'];
+ const paths=['/',...pageDirs.filter(d=>!['commercial','polyurea'].includes(d)).map(d=>'/'+d+'/')];
+ for(const p of paths){assert.equal((await fetch(base+p)).status,200,p);routes++;}assert.equal(routes,36);
+ for(const gone of removedRoutes){assert(!pageDirs.includes(gone),gone);assert.equal((await fetch(base+'/'+gone+'/')).status,404,gone);}
+ assert.equal((await fetch(base+'/sitemap.xml')).status,404);
+ assert.equal(await readFile(root+'/robots.txt','utf8'),'User-agent: *\nDisallow: /\n');
+ assert.equal(await readFile(root+'/_headers','utf8'),'/*\n  X-Robots-Tag: noindex\n');
+ assert.equal(await readFile(root+'/_redirects','utf8'),'/*  /404.html  404\n');
+ assert.deepEqual(JSON.parse(await readFile(root+'/vercel.json','utf8')).headers,[{source:'/(.*)',headers:[{key:'X-Robots-Tag',value:'noindex'}]}]);
+ // No intake: no forms, no personal-data or file inputs, no network or storage calls, no links to removed routes, no struck claims.
+ const struck=[/<form\b|<select\b|<textarea\b/,/sessionStorage|localStorage|claude\.|fetch\(|XMLHttpRequest|sendBeacon|addEventListener\(\s*['"]submit/,/kJ\/mol|kilojoule/i,/10-year (?:warranty )?standard|Level-5 roofs|15 and 20 (?:available )?on qualifying/,/available now/i,/UV protection|shingle surface from UV|UV can|stronger than ultraviolet|resists? (?:algae|regrowth)|protects against organic growth|algae and mold/i,/not a franchise or a business opportunity/i,/href="[^"]*\/(?:dealer-application|dealer-schedule|dealer-confirmed|find-a-dealer|estimate|roof-check|warranty)\//];
+ const survivors=[];
+ async function hotfixScan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory()){await hotfixScan(file);continue;}if(!/\.(html|js)$/.test(entry.name))continue;const text=await readFile(file,'utf8');
+  for(const re of struck)assert(!re.test(text),file+' still has '+re);
+  for(const m of text.matchAll(/<input\b[^>]*>/g)){assert(/type="(?:range|search)"/.test(m[0]),file+' has a collecting input: '+m[0]);assert(!/autocomplete="(?!off")/.test(m[0]),file+': '+m[0]);survivors.push(path.relative(root,file)+':'+(text.slice(0,m.index).split('\n').length)+' '+m[0].match(/type="(\w+)"/)[1]);}}}
+ await hotfixScan(root);assert.equal(survivors.length,5,survivors.join('; '));
  const forbidden=/26,290|\*96|nanodealers|450\s*psi|Exclusiv|\bPPS\b|250,000|annual revenue|data-q="(?:rev|cap)"/i;
  async function scan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())await scan(file);else if(/\.(html|js|xml)$/.test(entry.name))assert(!forbidden.test(await readFile(file,'utf8')),file+' has prohibited content');}}await scan(root);
  const copyChecks={
@@ -31,22 +47,10 @@ try{
  const context=await b.newContext({viewport:{width:390,height:844}});await context.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
  const page=await context.newPage();page.on('pageerror',e=>errors.push({url:page.url(),message:e.message,stack:e.stack}));
  for(const route of ['commercial','polyurea']){await page.goto(base+'/'+route+'/');const text=await page.locator('main').innerText();assert.match(text,/unavailable/i);assert(!/PPS|450|VOC|waterproof/i.test(text));}
- await page.goto(base+'/');await page.locator('#addr').fill('120 Oak Street, Springfield');await page.locator('#addrForm').evaluate(f=>f.requestSubmit());await page.waitForURL('**/estimate/');assert.match(await page.locator('#estAddr').innerText(),/120 Oak Street/);assert.equal(await page.locator('.bar-row, [data-estimator], .est form').count(),0);
- assert.equal(await page.evaluate(()=>window.dataLayer.filter(x=>x.event==='page_view').at(-1).page),'estimate');
+ // SITES-PUBLIC-HOTFIX: the address handoff and /estimate/ are removed; the home page has no address field.
+ await page.goto(base+'/');assert.equal(await page.locator('#addr, #addrForm, .zipform').count(),0);
  await page.goto(base+'/faq/');await page.locator('#faqq').fill('PRIVATE-TEST-STRING');await page.waitForTimeout(1100);assert(!JSON.stringify(await page.evaluate(()=>window.dataLayer)).includes('PRIVATE-TEST-STRING'));
- // Exercise every new acknowledgment × monthly-volume combination, with fresh state.
- for(let volume=0;volume<5;volume++)for(let ack=0;ack<4;ack++){
-  await page.goto(base+'/dealer-application/');await page.evaluate(()=>{sessionStorage.clear();sessionStorage.setItem('nrdl_a',JSON.stringify({rev:0,cap:2}));sessionStorage.setItem('nrdl_jobs','[5]');});await page.reload();
-  assert.equal(await page.evaluate(()=>sessionStorage.getItem('nrdl_a')),null);assert.equal(await page.locator('.fn-next').isDisabled(),true);
-  const choose=async(key,i)=>page.locator('[data-q="'+key+'"] button').nth(i).click();const next=()=>page.locator('.fn-next').click();
-  await choose('trade',0);await next();await choose('a1',0);await choose('a2',0);await next();await choose('jobs',0);await next();await choose('crew',0);await choose('volume',volume);await next();await choose('time',2);await choose('ack',ack);await next();
-  for(const [id,value] of [['dp-fn','Demo'],['dp-ln','Tester'],['dp-co','Fictional company'],['dp-em','demo@example.test'],['dp-ph','5550100000'],['dp-cty','Demo County']])await page.locator('#'+id).fill(value);
-  await next();const expected=ack===2?'smaller':ack===3?'later':volume===0?'review':'continue';const result=page.locator('.fn-res:not([hidden])');assert.equal(await result.getAttribute('data-outcome'),expected);
-  const state=await page.evaluate(()=>JSON.stringify({storage:{...sessionStorage},telemetry:window.dataLayer}));assert(!/"rev"|"cap"|Under \$250K/.test(state));outcomes.push({volume,ack,outcome:expected});
- }
- for(const match of sitemap.matchAll(/<loc>(.*?)<\/loc>/g)){await page.goto(base+new URL(match[1]).pathname);await page.waitForTimeout(30);}
- // All remaining trade selections reach their tailored questions.
- for(let trade=1;trade<6;trade++){await page.goto(base+'/dealer-application/');await page.evaluate(()=>sessionStorage.clear());await page.reload();await page.locator('[data-q="trade"] button').nth(trade).click();await page.locator('.fn-next').click();assert(await page.locator('[data-q="a1"] button').count()>0);}
+ for(const p of paths){await page.goto(base+p);await page.waitForTimeout(30);}
  assert.deepEqual(errors,[]);
- await mkdir('reports',{recursive:true});await writeFile('reports/VERIFICATION.json',JSON.stringify({routes,outcomes,errors,addressHandoff:'pass',trackingPrivacy:'pass',fences:'neutral 200 pages'},null,2)+'\n');console.log({routes,formCases:outcomes.length,errors});
+ await mkdir('reports',{recursive:true});await writeFile('reports/VERIFICATION.json',JSON.stringify({routes,removedRoutes,survivingInputs:survivors,errors,trackingPrivacy:'pass',fences:'neutral 200 pages'},null,2)+'\n');console.log({routes,removedRoutes:removedRoutes.length,survivingInputs:survivors,errors});
 }finally{await b.close();await new Promise(r=>service.close(r));}

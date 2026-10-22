@@ -21,3 +21,25 @@ npm test
 The suite starts and stops an ephemeral loopback server. It verifies sitemap responses, prohibited strings across served HTML/JS/XML, neutral route fences, address transfer, telemetry privacy, all 20 volume × acknowledgment outcomes, stale-state migration, each remaining trade prompt and JavaScript errors across the sitemap. Reports are local, ignored artifacts. It uses fictional contact fields and sends no submissions.
 
 Kaya reviews the exact head and Maat re-audits the claims diff before Simone can serve that approved commit privately on :3410. No public deployment, real form integration or cloud resources are included.
+
+## SITES-PUBLIC-HOTFIX: public-release strip
+
+This applies items 1, 4, 5 and 6 of Maat's public release check (`RESEARCH/MAAT_PUBLIC_RELEASE_CHECK_2026_10_22.md`), using Melan's defaults and Nova's rulings. Every change is a counted, exact row in `nanoroof-site/NR_PUBLIC_HOTFIX_DELTAS.json`.
+
+- **Routes removed:** `/dealer-application/`, `/dealer-schedule/`, `/dealer-confirmed/`, `/find-a-dealer/`, `/estimate/`, `/roof-check/` and `/warranty/`. `_redirects` serves each of them as a true 404. The `/warranty/` text is unchanged in source history; NR-C09 still needs Ray.
+- **Intake removed:**
+  - On the home page: the address bar, its sessionStorage handoff, and the ZIP lookup.
+  - The request forms on Architects, Field Data, Property owners and Technical data.
+  - The contact form. Phone, email and mail address stay.
+  - The Qualify self-check.
+  - The photo check that sent a photo to Claude.
+  - The dealer application, booking and confirmation funnel.
+  - Their `site.js` handlers, the next-step CTA panels, and every link to the removed routes.
+- **Claims removed (item 5):**
+  - The bond-energy (kJ/mol) comparison and the UV-stability inference drawn from it.
+  - UV, algae/mold and regrowth protection claims.
+  - The 10/15/20/5-year warranty-term strings, in body copy, JSON-LD and `site.js`.
+  - The "available now" colours wording.
+  - The "warranty terms are in the written warranty" disclosures and Ray's overrides stay.
+- **No indexing:** `robots.txt` is `Disallow: /` with no sitemap line. `sitemap.xml` is removed. `_headers` sets `X-Robots-Tag: noindex` on `/*`, and `vercel.json` sets the same header for every path.
+- **Kept, collecting no data (Nova b05a6d7c):** three before/after `range` sliders, the Contractors material calculator `range`, and the FAQ `search` box. `npm test` lists them by file and line and asserts there are no forms, no other inputs, and no network, storage or submit handlers.
