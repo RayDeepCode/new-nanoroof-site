@@ -5616,6 +5616,38 @@
    "before": "<span>Find out what certification looks like in your area.</span>",
    "after": "",
    "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M13 hero county-limit sentence (Maat f37224cd; NR-C10 needs Ray)",
+   "file": "contractors/index.html",
+   "before": " We certify a limited number of dealers per county.",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M14 hero county-cap band (Maat f37224cd; NR-C10 needs Ray)",
+   "file": "contractors/index.html",
+   "before": "\n    <div class=\"capb\"><span>We cap the number of Certified Dealers in each county. When a county’s seats are filled, we stop appointing there.</span></div>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M15 county-seats section (Maat f37224cd; NR-C10 needs Ray)",
+   "file": "contractors/index.html",
+   "before": "<section class=\"section m-steel\" id=\"contractors-seats\"><div class=\"wrap grid2\">We cap the number of Certified Dealers in each county. When a county’s seats are filled, we stop appointing there.</div></section>\n",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M16 mid-band county room check (same class as Maat f37224cd; NR-C10 needs Ray)",
+   "file": "contractors/index.html",
+   "before": "<span>See whether your county still has room for a Certified Dealer. It takes about five minutes.</span>",
+   "after": "",
+   "count": 1
   }
  ]
 }
