@@ -21,6 +21,8 @@ try{
  const survivors=[];
  async function hotfixScan(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory()){await hotfixScan(file);continue;}if(!/\.(html|js)$/.test(entry.name))continue;const text=await readFile(file,'utf8');
   for(const re of struck)assert(!re.test(text),file+' still has '+re);
+  // Item 6 on hosts that ignore _headers (GitHub Pages; Nova 806fe73f): every HTML file carries exactly one robots noindex meta.
+  if(entry.name.endsWith('.html'))assert.equal((text.match(/<meta name="robots"[^>]*>/g)||[]).join(),'<meta name="robots" content="noindex">',file+' robots meta');
   for(const m of text.matchAll(/<input\b[^>]*>/g)){assert(/type="(?:range|search)"/.test(m[0]),file+' has a collecting input: '+m[0]);assert(!/autocomplete="(?!off")/.test(m[0]),file+': '+m[0]);survivors.push(path.relative(root,file)+':'+(text.slice(0,m.index).split('\n').length)+' '+m[0].match(/type="(\w+)"/)[1]);}}}
  await hotfixScan(root);assert.equal(survivors.length,5,survivors.join('; '));
  const forbidden=/26,290|\*96|nanodealers|450\s*psi|Exclusiv|\bPPS\b|250,000|annual revenue|data-q="(?:rev|cap)"/i;

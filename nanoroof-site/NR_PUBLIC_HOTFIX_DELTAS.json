@@ -4856,6 +4856,318 @@
    "before": "the SPS System encapsulates it and resists regrowth.",
    "after": "the SPS System encapsulates it.",
    "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "404.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "about/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "accessibility/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "algae-streaks/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "architects/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "assessment/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "care-plan/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "cleaning/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "cleaning-products/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "colors/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "commercial/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "contact/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "contractors/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "curling-cracking/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "faq/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "field-data/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "granule-loss/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "homeowners/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "how-it-works/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "learn/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "moisture/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "polyurea/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "preservation/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "privacy/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "products/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "property-owners/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "qualify/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "referral-partners/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "repair-products/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "roof-leaks/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "roof-system/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "science/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "silicone/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "sps/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "sustainability/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "technical-data/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "terms/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
+  },
+  {
+   "item": "6",
+   "row": "NR-I6 robots noindex meta (GitHub Pages ignores _headers; Nova 806fe73f)",
+   "file": "tune-up/index.html",
+   "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
+   "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
+   "count": 1
   }
  ]
 }

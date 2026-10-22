@@ -41,5 +41,5 @@ This applies items 1, 4, 5 and 6 of Maat's public release check (`RESEARCH/MAAT_
   - The 10/15/20/5-year warranty-term strings, in body copy, JSON-LD and `site.js`.
   - The "available now" colours wording.
   - The "warranty terms are in the written warranty" disclosures and Ray's overrides stay.
-- **No indexing:** `robots.txt` is `Disallow: /` with no sitemap line. `sitemap.xml` is removed. `_headers` sets `X-Robots-Tag: noindex` on `/*`, and `vercel.json` sets the same header for every path.
+- **No indexing:** `robots.txt` is `Disallow: /` with no sitemap line. `sitemap.xml` is removed. `_headers` sets `X-Robots-Tag: noindex` on `/*`, and `vercel.json` sets the same header for every path. GitHub Pages ignores both files, so every HTML page (including `404.html`) also carries `<meta name="robots" content="noindex">`; on Pages, assets get no noindex header.
 - **Kept, collecting no data (Nova b05a6d7c):** three before/after `range` sliders, the Contractors material calculator `range`, and the FAQ `search` box. `npm test` lists them by file and line and asserts there are no forms, no other inputs, and no network, storage or submit handlers.
