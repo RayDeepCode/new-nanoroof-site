@@ -4335,10 +4335,10 @@
   },
   {
    "item": "6",
-   "row": "NR-I1 robots disallow, no sitemap line",
+   "row": "NR-I1 robots allow (so crawlers see the noindex meta; Maat 6c16a602), no sitemap line",
    "file": "robots.txt",
    "before": "User-agent: *\nAllow: /\nSitemap: https://www.nanoroof.com/sitemap.xml\n",
-   "after": "User-agent: *\nDisallow: /\n",
+   "after": "User-agent: *\nAllow: /\n",
    "count": 1
   },
   {

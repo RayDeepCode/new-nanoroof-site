@@ -12,7 +12,7 @@ try{
  for(const p of paths){assert.equal((await fetch(base+p)).status,200,p);routes++;}assert.equal(routes,36);
  for(const gone of removedRoutes){assert(!pageDirs.includes(gone),gone);assert.equal((await fetch(base+'/'+gone+'/')).status,404,gone);}
  assert.equal((await fetch(base+'/sitemap.xml')).status,404);
- assert.equal(await readFile(root+'/robots.txt','utf8'),'User-agent: *\nDisallow: /\n');
+ assert.equal(await readFile(root+'/robots.txt','utf8'),'User-agent: *\nAllow: /\n');
  assert.equal(await readFile(root+'/_headers','utf8'),'/*\n  X-Robots-Tag: noindex\n');
  assert.equal(await readFile(root+'/_redirects','utf8'),'/*  /404.html  404\n');
  assert.deepEqual(JSON.parse(await readFile(root+'/vercel.json','utf8')).headers,[{source:'/(.*)',headers:[{key:'X-Robots-Tag',value:'noindex'}]}]);
