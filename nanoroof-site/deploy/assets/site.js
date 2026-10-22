@@ -49,7 +49,7 @@ function initCycle(S){ if(!document.getElementById('ring'+S)) return;
      fix:'SPS encapsulates: a water-based silicone that penetrates and bonds inside asphalt shingles and adds a surface layer.'},
     {t:['Brittleness'], title:'Brittleness', cut:false,
      body:'With its oils gone and its binder oxidized, the asphalt hardens. A brittle shingle can\u2019t flex the way a new one does.',
-     fix:'Not reversed directly. NANOROOF slows it by working on the stages that feed it: oxidation and moisture.'},
+     fix:''},
     {t:['Thermal-cycling','cracks'], title:'Thermal-cycling cracks', cut:false,
      body:'A roof heats and cools every day. Brittle asphalt can\u2019t keep up with that movement, so it develops surface cracks.',
      fix:'Slowed rather than stopped: fewer stages feeding brittleness means less cracking. The silicone layer is flexible, so it isn\u2019t a rigid film that cracks with the shingle.'},
@@ -138,7 +138,7 @@ if(sq){ var upd=function(){ var s=parseFloat(sq.value); if(!s||s<500) s=500; if(
 
 
 /* ---------- audience bar ---------- */
-var AUD={homeowners:'Homeowner',contractors:'Contractor','dealer-application':'Contractor','dealer-schedule':'Contractor','dealer-confirmed':'Contractor','referral-partners':'Contractor',architects:'Architect or engineer','property-owners':'Property manager',commercial:'Commercial owner'};
+var AUD={homeowners:'Homeowner',contractors:'Contractor','referral-partners':'Contractor',architects:'Architect or engineer','property-owners':'Property manager',commercial:'Commercial owner'};
 function setAud(slug){ var lab=document.getElementById('audLabel'); if(!lab) return;
   var a=AUD[slug]; if(a){ window.__aud=a; } lab.textContent=window.__aud||'Homeowner';
   qa('.aud-panel a').forEach(function(x){ x.setAttribute('aria-current', x.getAttribute('data-aud')===slug?'true':'false'); });
@@ -192,7 +192,7 @@ if(rsd){ var RS=JSON.parse(rsd.textContent), rpins=qa('.rs-pin'), rc=0;
 
 /* ---------- router ---------- */
 var pages=qa('.page');
-var GROUP={qualify:'app',colors:'app',cleaning:'app','tune-up':'app',commercial:'app','property-owners':'app',sps:'prod',products:'prod',architects:'pro',contractors:'pro','dealer-application':'pro','dealer-schedule':'pro','dealer-confirmed':'pro','referral-partners':'pro','repair-products':'prod','cleaning-products':'prod','technical-data':'prod',silicone:'how',polyurea:'how',science:'how','how-it-works':'how','roof-system':'how',assessment:'how',preservation:'how','care-plan':'how',moisture:'cmp','field-data':'cmp',faq:'cmp',estimate:'cmp'};
+var GROUP={qualify:'app',colors:'app',cleaning:'app','tune-up':'app',commercial:'app','property-owners':'app',sps:'prod',products:'prod',architects:'pro',contractors:'pro','referral-partners':'pro','repair-products':'prod','cleaning-products':'prod','technical-data':'prod',silicone:'how',polyurea:'how',science:'how','how-it-works':'how','roof-system':'how',assessment:'how',preservation:'how','care-plan':'how',moisture:'cmp','field-data':'cmp',faq:'cmp',estimate:'cmp'};
 function route(){
   var slug=window.__SLUG||'home', sub=(location.hash||'').replace(/^#/,'')||null;
   var target=document.querySelector('[data-page="'+slug+'"]')||document.querySelector('[data-page="404"]');
@@ -241,7 +241,7 @@ var R={ 'how-it-works':['roof-system','silicone','qualify'],'silicone':['science
  'learn':['how-it-works','moisture','roof-system'],'moisture':['silicone','roof-system','how-it-works'],'field-data':['care-plan','roof-system'],
  'about':['sustainability','field-data','contractors'],'sustainability':['about','how-it-works','field-data'],'contact':['faq'],
  'referral-partners':['contractors','homeowners'],'homeowners':['qualify','faq'],'architects':['products','field-data'] };
-var IMG={'roof-check':'gi-phone','science':'gi-drop','contact':'gi-15','about':'gi-17', 'roof-system':'gi-rs','products':'gi-mac','faq':'gi-c0','learn':'gi-mac','moisture':'gi-mac','field-data':'gi-mm','contact':'gi-nb','find-a-dealer':'gi-nb','cleaning':'gi-cb' };
+var IMG={'science':'gi-drop','contact':'gi-15','about':'gi-17', 'roof-system':'gi-rs','products':'gi-mac','faq':'gi-c0','learn':'gi-mac','moisture':'gi-mac','field-data':'gi-mm','contact':'gi-nb','cleaning':'gi-cb' };
 function build(){
   qa('.page[data-page]').forEach(function(pg){
     var k=pg.getAttribute('data-page'); if(k==='home'||!T[k]) return;

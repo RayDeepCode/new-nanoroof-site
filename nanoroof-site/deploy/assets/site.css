@@ -1295,7 +1295,6 @@ table.spec tr:first-child th,table.spec tr:first-child td{border-top:0}
 .rc-off .rc-go{opacity:.5}
 @media (max-width:860px){.rc{grid-template-columns:1fr}}
 .rel-like{text-decoration:none;transition:transform .15s,border-color .15s}.rel-like:hover{transform:translateY(-2px);border-color:#6CB743}
-[data-page="find-a-dealer"] h3 a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:underline;text-underline-offset:3px}
 .rc-sum{font-weight:650;color:#0E2547;margin:0 0 8px}
 .m-lab .detail .nr > span:not(.nn),.loop-card .nr > span:not(.nn){color:#fff!important}
 /* footer brand row (WetBond-style) */

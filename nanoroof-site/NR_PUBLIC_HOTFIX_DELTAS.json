@@ -5168,6 +5168,438 @@
    "before": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">",
    "after": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"robots\" content=\"noindex\">",
    "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M1 contractors card: county cap, market check and application promise (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contractors/index.html",
+   "before": "    <span class=\"vh-ck\">Certified Dealer appointments are capped per county</span>\n    <h3>See if your market is open</h3>\n    <p class=\"sm\">A short application, about five minutes. Most markets have room for only a few dealers. If you’re a fit, you’ll pick a time for a call.</p>\n",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M2 contractors Apply panel (market check, booked call) (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contractors/index.html",
+   "before": "<section class=\"section m-night\" id=\"contractors-form\"><div class=\"wrap\"><div class=\"ctapanel apply-ctap\"><div><span class=\"pill new\">Apply</span><h2>See if your market is open</h2><p>Six short questions, about five minutes. If you’re a fit, you’ll pick a time for a call. We don’t certify everyone who applies.</p></div><div class=\"acts\"></div></div></div></section>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M3 first-90-days Day 1 row (apply and booked call); rest unchanged (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contractors/index.html",
+   "before": "<li><span class=\"tl-y\">Day 1</span><b>Apply and call</b><p>Five minutes to apply. If it’s a fit, we book a call.</p></li>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M4 ZIP routing sentence (ZIP lookup removed) (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contractors/index.html",
+   "before": " Homeowners who check their ZIP are routed to dealers equally.",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M5 mid-page market scarcity band (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contractors/index.html",
+   "before": "<section class=\"section m-lab mid-cta\"><div class=\"wrap\"><div class=\"midc\"><div><b>Most markets have room for only a few dealers.</b><span>Check yours before it fills.</span></div><div class=\"midc-a\"><a class=\"btn btn-line\" href=\"/contractors/#ch7\">See what’s included</a></div></div></div></section>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "404.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "about/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "accessibility/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "algae-streaks/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "architects/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "assessment/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "care-plan/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "cleaning/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "cleaning-products/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "colors/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "commercial/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contact/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "contractors/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "curling-cracking/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "faq/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "field-data/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "granule-loss/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "homeowners/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "how-it-works/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "learn/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "moisture/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "polyurea/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "preservation/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "privacy/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "products/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "property-owners/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "qualify/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "referral-partners/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "repair-products/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "roof-leaks/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "roof-system/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "science/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "silicone/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "sps/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "sustainability/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "technical-data/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "terms/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M6 nav market-check sub-line (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "tune-up/index.html",
+   "before": "<span>Watch the overview, then check your market</span>",
+   "after": "<span>Watch the overview</span>",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M7 site.js dead slug keys (AUD) (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "assets/site.js",
+   "before": "'dealer-application':'Contractor','dealer-schedule':'Contractor','dealer-confirmed':'Contractor',",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M7 site.js dead slug keys (GROUP) (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "assets/site.js",
+   "before": "'dealer-application':'pro','dealer-schedule':'pro','dealer-confirmed':'pro',",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M7 site.js dead slug keys (IMG roof-check) (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "assets/site.js",
+   "before": "var IMG={'roof-check':'gi-phone',",
+   "after": "var IMG={",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M7 site.js dead slug keys (IMG find-a-dealer) (Maat 9e4458e3, Nova 2ff55cd2)",
+   "file": "assets/site.js",
+   "before": "'find-a-dealer':'gi-nb',",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M8 FAQ: county cap on dealer appointments (Maat 9e4458e3 territory scarcity, same class)",
+   "file": "contractors/index.html",
+   "before": "\n    <details><summary>How are Certified Dealer appointments capped?</summary><p>We cap the number of Certified Dealers in each county. When a county’s seats are filled, we stop appointing there.</p></details>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M9 mid-page band: county seat check (Maat 9e4458e3 territory scarcity, same class)",
+   "file": "contractors/index.html",
+   "before": "<span>Check whether your county still has a seat.</span>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "5",
+   "row": "NR-C10 bond-energy citation caption (Kaya f90c6ca9)",
+   "file": "contractors/index.html",
+   "before": "\n\n  \n  <p class=\"sci-src\">Approximate bond energies from published chemistry references: Britannica; Plastics Technology; INMR, “Chemistry and Properties of Silicones.”</p>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "5",
+   "row": "NR-C11 silicone oxidation premise sentence (NR-C14 category claim kept) (Maat 6da6d255)",
+   "file": "contractors/index.html",
+   "before": " As a material class, silicone’s Si–O backbone is already fully oxidized in its cured state.",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "5",
+   "row": "NR-C12 Brittleness fix line: oxidation performance claim (Maat 6da6d255)",
+   "file": "assets/site.js",
+   "before": "fix:'Not reversed directly. NANOROOF slows it by working on the stages that feed it: oxidation and moisture.'",
+   "after": "fix:''",
+   "count": 1
+  },
+  {
+   "item": "1",
+   "row": "NR-M10 dead find-a-dealer style rule (Kaya knr.py removed-route strings)",
+   "file": "assets/site.css",
+   "before": "[data-page=\"find-a-dealer\"] h3 a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:underline;text-underline-offset:3px}\n",
+   "after": "",
+   "count": 1
   }
  ]
 }
