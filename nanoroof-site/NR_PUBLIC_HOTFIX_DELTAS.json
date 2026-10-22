@@ -5600,6 +5600,22 @@
    "before": "[data-page=\"find-a-dealer\"] h3 a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:underline;text-underline-offset:3px}\n",
    "after": "",
    "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M11 \"first certified dealer in most markets\" list item (heading-only item would be empty) (Nova 97af5771)",
+   "file": "contractors/index.html",
+   "before": "<li><b>The network is growing.</b> In most markets, you’d be the first certified dealer offering roof preservation.</li>",
+   "after": "",
+   "count": 1
+  },
+  {
+   "item": "4",
+   "row": "NR-M12 mid-band area-specific certification line (Nova 97af5771)",
+   "file": "contractors/index.html",
+   "before": "<span>Find out what certification looks like in your area.</span>",
+   "after": "",
+   "count": 1
   }
  ]
 }
