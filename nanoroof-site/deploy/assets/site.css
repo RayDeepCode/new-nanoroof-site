@@ -1277,25 +1277,7 @@ table.spec tr:first-child th,table.spec tr:first-child td{border-top:0}
 .dbadges.three .dbadge{max-width:340px}
 .dbadge svg{width:100%;height:auto;filter:drop-shadow(0 10px 18px rgba(12,42,91,.16))}
 .look-badge .note{margin:10px 0 0;font-size:.88rem;color:#5B6878}
-/* photo roof check */
-.rc{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
-.rc-drop{position:relative;border:2px dashed #C3CEDC;border-radius:20px;background:#F7FAFE;min-height:320px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.rc.has .rc-drop{border-style:solid;border-color:#DFE6F0}
-.rc-pick{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:30px;cursor:pointer;color:#344256}
-.rc-pick b{color:#0E2547;font-size:1.1rem}
-.rc.has .rc-pick{position:absolute;right:12px;bottom:12px;padding:8px 14px;border-radius:999px;background:rgba(8,22,43,.85);color:#fff;flex-direction:row}
-.rc.has .rc-pick span{display:none}.rc.has .rc-pick b{color:#fff;font-size:.9rem}
-.rc-prev{width:100%;height:100%;object-fit:cover;display:block;max-height:460px}
-.rc-status{color:#5B6878;margin:12px 0}
-.rc-find{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
-.rc-find li{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid #DFE6F0}
-.rc-find .lv{grid-row:1/3;align-self:center;font-size:.72rem;font-weight:800;padding:4px 8px;border-radius:999px;background:#EEF3FA;color:#194890;white-space:nowrap}
-.rc-find .lv-none .lv{background:#EFF7E8;color:#2F5F1A}.rc-find .lv-moderate .lv{background:#FFF4E5;color:#7A4A0C}.rc-find .lv-severe .lv{background:#FDE8E8;color:#9B1C1C}
-.rc-find b{color:#0E2547;font-size:.95rem}.rc-find .nt{color:#5B6878;font-size:.88rem}
-.rc-off .rc-go{opacity:.5}
-@media (max-width:860px){.rc{grid-template-columns:1fr}}
 .rel-like{text-decoration:none;transition:transform .15s,border-color .15s}.rel-like:hover{transform:translateY(-2px);border-color:#6CB743}
-.rc-sum{font-weight:650;color:#0E2547;margin:0 0 8px}
 .m-lab .detail .nr > span:not(.nn),.loop-card .nr > span:not(.nn){color:#fff!important}
 /* footer brand row (WetBond-style) */
 .f-brand{display:grid;grid-template-columns:1fr auto;align-items:end;gap:28px}
