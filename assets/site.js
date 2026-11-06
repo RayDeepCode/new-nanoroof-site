@@ -44,24 +44,24 @@ function initCycle(S){ if(!document.getElementById('ring'+S)) return;
     {t:['UV'], title:'UV exposure', cut:false,
      body:'Sunlight hits the asphalt wherever the granule layer has thinned. Granules are the shingle\u2019s sunscreen; every one lost lets more UV through.',
      fix:''},
-    {t:['Photo-oxidation','+ volatilization'], title:'Photo-oxidation and volatilization', cut:true,
+    {t:['Photo-oxidation','+ volatilization'], title:'Photo-oxidation and volatilization', cut:false,
      body:'UV oxidizes the asphalt binder, and heat drives off its lighter oils. The asphalt slowly loses the compounds that keep it supple.',
-     fix:'SPS encapsulates: a water-based silicone that penetrates and bonds inside asphalt shingles and adds a surface layer.'},
+     fix:''},
     {t:['Brittleness'], title:'Brittleness', cut:false,
      body:'With its oils gone and its binder oxidized, the asphalt hardens. A brittle shingle can\u2019t flex the way a new one does.',
      fix:''},
     {t:['Thermal-cycling','cracks'], title:'Thermal-cycling cracks', cut:false,
      body:'A roof heats and cools every day. Brittle asphalt can\u2019t keep up with that movement, so it develops surface cracks.',
-     fix:'Slowed rather than stopped: fewer stages feeding brittleness means less cracking. The silicone layer is flexible, so it isn\u2019t a rigid film that cracks with the shingle.'},
-    {t:['Moisture','entry'], title:'Moisture entry', cut:true,
+     fix:''},
+    {t:['Moisture','entry'], title:'Moisture entry', cut:false,
      body:'Water gets into the cracks and the open surface. In cold climates, freeze-thaw widens the cracks each winter.',
-     fix:'The bonded silicone layer on top adds water protection over the shingle and its surface cracks.'},
+     fix:''},
     {t:['Biological','growth'], title:'Biological growth', cut:false,
      body:'Algae, moss and lichen take hold where the surface stays damp. They hold water against the shingle and work granules loose.',
      fix:''},
-    {t:['Granule','loss'], title:'Granule loss', cut:true,
+    {t:['Granule','loss'], title:'Granule loss', cut:false,
      body:'Granules loosen and wash into the gutters. Bare asphalt is now open to the sun, and the loop starts again, faster.',
-     fix:'Encapsulating the shingle holds the remaining granules in place, which is what keeps the next turn of the loop from starting.'}
+     fix:''}
   ];
   var cx=280, cy=280, R=200, NR=58, n=STAGES.length, cur=0;
   var NS='http://www.w3.org/2000/svg';
@@ -79,7 +79,7 @@ function initCycle(S){ if(!document.getElementById('ring'+S)) return;
   STAGES.forEach(function(s,i){
     var p=pos(i), g=document.createElementNS(NS,'g');
     g.setAttribute('class','node'+(s.cut?' cut':'')); g.setAttribute('tabindex','0'); g.setAttribute('role','button');
-    g.setAttribute('aria-label','Stage '+(i+1)+': '+s.title+(s.cut?'. NANOROOF works against this stage.':''));
+    g.setAttribute('aria-label','Stage '+(i+1)+': '+s.title);
     var c=document.createElementNS(NS,'circle'); c.setAttribute('cx',p[0]); c.setAttribute('cy',p[1]); c.setAttribute('r',NR); g.appendChild(c);
     var num=document.createElementNS(NS,'text'); num.setAttribute('class','num'); num.setAttribute('x',p[0]); num.setAttribute('text-anchor','middle');
     num.setAttribute('y', p[1] - (s.t.length>1?16:8)); num.textContent=(i+1); g.appendChild(num);
@@ -97,7 +97,7 @@ function initCycle(S){ if(!document.getElementById('ring'+S)) return;
     $('dStep'+S).textContent='Stage '+(cur+1)+' of '+n+(cur===n-1?' \u2192 back to stage 1':'');
     $('dTitle'+S).textContent=s.title; var di=$('dImg'+S); di.className='dimg gi-'+(4+cur); di.setAttribute('aria-label','Illustration: '+s.title.toLowerCase()+' on an asphalt shingle roof');
     $('dBody'+S).textContent=s.body;
-    $('dFixHead'+S).textContent= !s.fix ? '' : s.cut ? 'Where NANOROOF interrupts it' : 'What NANOROOF does here';
+    $('dFixHead'+S).textContent= '';
     $('dFix'+S).textContent=s.fix;
   }
   $('prev'+S).addEventListener('click',function(){ show(cur-1); });
@@ -147,7 +147,7 @@ document.addEventListener('click',function(e){ var d=document.getElementById('au
 /* ---------- walk your roof ---------- */
 var wd=document.getElementById('walkData');
 if(wd){ var W=JSON.parse(wd.textContent), pins=qa('#home-check .pin'), wc=0;
-  var VL={good:'good',fix:'fix',no:'no'};
+  var VL={good:'good',fix:'',no:'no'};
   function wshow(i){ wc=(i+W.length)%W.length; var s=W[wc];
     pins.forEach(function(p,k){ p.classList.toggle('on',k===wc); p.setAttribute('aria-pressed',k===wc?'true':'false'); });
     $('wkStep').textContent='Point '+(wc+1)+' of '+W.length; $('wkTitle').textContent=s.t; $('wkBody').textContent=s.b;
@@ -202,7 +202,7 @@ function route(){
   closeMenus(); closeDrawer(); setAud(slug);
   qa('.mlink').forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('data-route')===slug);if(a.getAttribute('data-route')===slug)a.setAttribute('aria-current','page');});
   trigs.forEach(function(t){t.classList.toggle('cur',GROUP[slug]===t.getAttribute('data-group'));});
-  var el=sub?document.getElementById(slug+'-'+sub):null;
+  var el=sub&&sub!=='main'?document.getElementById(slug+'-'+sub):null;
   if(el){setTimeout(function(){el.scrollIntoView({behavior:reduce?'auto':'smooth'});},30);}
   else{window.scrollTo({top:0,left:0,behavior:'instant'}); var h1=target.querySelector('h1'); if(h1){h1.setAttribute('tabindex','-1');h1.focus({preventScroll:true});}}
 }
