@@ -1,0 +1,9 @@
+{
+  "brand": "nanoroof",
+  "output": "nanoroof-site/deploy",
+  "media": "nanoroof-site/media",
+  "holds": [
+    "commercial",
+    "polyurea"
+  ]
+}

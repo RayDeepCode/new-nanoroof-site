@@ -1705,3 +1705,11 @@ table.cmpt tr:last-child th,table.cmpt tr:last-child td{border-bottom:0}
 .vsl{aspect-ratio:16/9}.amap-img{aspect-ratio:16/9;object-fit:contain}
 /* Six initial trade choices: reserve their height before the runtime attaches. */
 .fn-step[data-s="1"] .fn-opts{min-height:386px}
+
+/* v6 mobile tap targets (WCAG 2.2 AA 2.5.8: 24px minimum) */
+@media (max-width:760px){
+  .crumbs a{display:inline-block;padding:5px 2px}
+  .f-grid li{margin-bottom:2px}
+  .f-grid li a{display:inline-block;padding:6px 0}
+  .sps-sub a{display:inline-block;padding:6px 0}
+}

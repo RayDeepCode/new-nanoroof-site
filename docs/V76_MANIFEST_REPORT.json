@@ -1,0 +1,362 @@
+{
+  "brand": "nanoroof",
+  "matched": [
+    "404.html",
+    "about.html",
+    "accessibility.html",
+    "algae-streaks.html",
+    "architects.html",
+    "assessment.html",
+    "assets/site.css",
+    "assets/site.js",
+    "care-plan.html",
+    "cleaning-products.html",
+    "cleaning.html",
+    "colors.html",
+    "contact.html",
+    "contractors.html",
+    "curling-cracking.html",
+    "faq.html",
+    "field-data.html",
+    "granule-loss.html",
+    "homeowners.html",
+    "how-it-works.html",
+    "index.html",
+    "learn.html",
+    "moisture.html",
+    "preservation.html",
+    "privacy.html",
+    "products.html",
+    "property-owners.html",
+    "qualify.html",
+    "referral-partners.html",
+    "repair-products.html",
+    "roof-leaks.html",
+    "roof-system.html",
+    "science.html",
+    "silicone.html",
+    "sps.html",
+    "sustainability.html",
+    "technical-data.html",
+    "terms.html",
+    "tune-up.html"
+  ],
+  "differences": [
+    {
+      "file": "commercial.html",
+      "reason": "Omitted: standing spec requires actual HTTP 404 for held route."
+    },
+    {
+      "file": "polyurea.html",
+      "reason": "Omitted: standing spec requires actual HTTP 404 for held route."
+    }
+  ],
+  "extras": [
+    {
+      "file": "_headers",
+      "sha256": "1798f78f5e48ce125506274988d5555f052d762afcb096ab9e4b8b15c766269a",
+      "reason": "Preserved existing host/noindex configuration or brand icon (not included in archive)."
+    },
+    {
+      "file": "_redirects",
+      "sha256": "f0145b1ab240f4fa1ba3c21e03901eea9648d253fa2ac30429ab215f76a9ebf1",
+      "reason": "Preserved existing host/noindex configuration or brand icon (not included in archive)."
+    },
+    {
+      "file": "assets/img/b-10.webp",
+      "sha256": "86114b6f70841f4c85756c368dd65705f796f82dca85886a280bdbc1724a217e",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/b-15.webp",
+      "sha256": "cf148e82b4fd43c572910d11e253002e00a911456b81aadc31374751a34be6ba",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/b-20.webp",
+      "sha256": "d22405959e7484d0312f0c8d41fa942061362ba14ef972053e91d514e461512f",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/b-tr.webp",
+      "sha256": "ae183b58e90ab0142d70007bf6aeef132b8c8c79e7ccbb17a35e2d51408c16b9",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-0.webp",
+      "sha256": "faed467d6d5cf7ab4d26bb2a14b3602f4a9e1f72708ceddae990ba9b33c99d2c",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-1.webp",
+      "sha256": "5d1f39ef2940aa346ff6af5642642e1e7854a8ee76a67d0df009d5ad940f65d8",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-10.webp",
+      "sha256": "9ce65f138b7c713ea00af86d641bf41c99e03812744a3eef94976ddac0085371",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-11.webp",
+      "sha256": "88fd69af424061ad7157d6c8d60518bb2b3ae401924c01249dbb065a2e220740",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-12.webp",
+      "sha256": "ba3c8797c88f8a56995159319d7f0ecd5dad388751bcbe66b9dbe09dd62687e4",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-13.webp",
+      "sha256": "f16ef37d404b894e02dd86ae6b20e44ead57726a5bd624a583b1f0b4a92ae03f",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-14.webp",
+      "sha256": "eaa12435e199e4cb29be634570b31965a6eca64497f44a24b8481c706229c1a1",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-15.webp",
+      "sha256": "c7213d0efcb9fd802ed7645d1cdcfa49b3b6d2e763e864b305ddd8597f074091",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-16.webp",
+      "sha256": "4bf7e720249f27b649c2c320d61034163f82a96490b788a1fa964bd87a190345",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-17.webp",
+      "sha256": "f28ddece2213df1a34b1444a3c1e0688c47273d02bd2d9287e5fb2e36a73ebb4",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-18.webp",
+      "sha256": "7f29a7d1f3824fc28f2dcc001361d2634c3cd2b927decbe8988532367599474f",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-19.webp",
+      "sha256": "71b0a0876712af29f459f03dd1c82a3786473de9a92168f4f72524fa118503b3",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-2.webp",
+      "sha256": "482e666ac57a8909d99e03d9d4c4017f99abd0ff6d8ab83ce92c7e0f1552db5c",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-20.webp",
+      "sha256": "ed61400a68b5ec9cd902eaafcb36b109730fbcf1d0101770cd7650df17aac421",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-21.webp",
+      "sha256": "b38ec500c458a5b5b412a777ee32f1c42dff210ce778b02b3a76d43ca7f8cc52",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-3.webp",
+      "sha256": "cb435e4886c5e4ba9a952378aab350192625ac007253cf8478a26a688d8a0cbe",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-4.webp",
+      "sha256": "e1e6405f341d7a3fd8bfbd0fa97c13d74b06a144a4f107fd6203028291862595",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-5.webp",
+      "sha256": "d3cd0f3aeb38816e71f0cab4075c488a2765a495ba8ab58af0135f1e8e59972d",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-6.webp",
+      "sha256": "a73fbcc0906db89aa8aac34de5cb56064adb336a21818659f37c7d17dfd85bf0",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-7.webp",
+      "sha256": "89616f6f2c02016dd741e217b23c9c993b2e82b8ea2aee5d8ab5d17c2909844e",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-8.webp",
+      "sha256": "7b3a2cd231a764e0f755319de90a7045de9a38fa1ef60ec537b55b3e05178309",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-9.webp",
+      "sha256": "5d7e0457fb240e698c119ca3375b79c3b3311d191646f05d02cdb14529c1dcd6",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-am0.webp",
+      "sha256": "8e1887d745df22f85fc7e1eff790a8926f15f8153eec05b2dc2906fc4b808766",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-am1.webp",
+      "sha256": "87d18e68db4c99fce948586a99c1680a3b986cdb7a42afe0ce8903af434d1255",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-am2.webp",
+      "sha256": "baf5ffa59ce4725870dd562bf609cbc6c1530af0caace97b7276db4dcc2bc483",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-am3.webp",
+      "sha256": "06ba9132eff2c0a583990d2d3cc7bfa9e0c52b193ca6d01c70083a0241531b31",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-am4.webp",
+      "sha256": "059601b7ea4d8afe0659475ad2629efecc976275eaa9eaf1041e54a24e946298",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-am5.webp",
+      "sha256": "81a048485ec9c00acb14c4de729d49b3ac518dc52c0a7aecd77631f5acb83741",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-c0.webp",
+      "sha256": "d8053da37997324f9dee612fe7439829f257172d7facb6e1946766048ca1fe86",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-c1.webp",
+      "sha256": "7a9d88ea7e5e7f607c6daf794ff8899d8d53c3f0c5e5cc40c7afdc816ba699d6",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-c2.webp",
+      "sha256": "67084fdc72d3a7fce5ee68f1f716a407c55015818d51cb2f9755ca6b007ba79f",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-c3.webp",
+      "sha256": "9b5e97fff01158c5320f3c0ea4b558e3c65eadbf1eb3e957a2eb0804e51d8af0",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-c4.webp",
+      "sha256": "2cee59fa46c6d6d5419243d32044f5f97d65c6cf7e2971813984cca4515da134",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-ca.webp",
+      "sha256": "05f5a03b89b9b941ff71a7fa2b99a28129fb942a449fbf2ffb6328937a090153",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-cb.webp",
+      "sha256": "7fa327a0c4b667caa7a037afbf466b46f1ace2648881d85b256216eeae8f8ec2",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-cm1.webp",
+      "sha256": "7131e27d72b718dc3234dd784b09c3bc5328287c9818150b6dfbdea059715878",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-cm2.webp",
+      "sha256": "e7814112307b4207444fa5ef999965899907a48a2d0af738b450d11a7b4f6f81",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-cm3.webp",
+      "sha256": "00b7706f4d0e98363a891ce6fe4ede3920e322a603239f0db620f374ea200cfc",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-drop.webp",
+      "sha256": "1e1c9fc08014ed16ac6be07b53230eda2a702bc789ee915a35d9d9ca675c8190",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-mac.webp",
+      "sha256": "5fa55b9d55483f2985d94003fd8e542a2ca80e6f562171935f98d2a2d3449f48",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-mm.webp",
+      "sha256": "77f45f4161e5f6029166ef5eacdd16933773f4723cc2560567c2cf978ce47b88",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-nail.webp",
+      "sha256": "36ad3c1b6b33ef9a08d6ebdb460822109b994fb5025643e26db40e343c4caaaf",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-nb.webp",
+      "sha256": "f735187dd04fb079734d09b0b7ae75b6007a8be7418a3efcf83d9f94e3d38de2",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-phone.webp",
+      "sha256": "2af9e92cb1a9c58a20dbde18299cc173c0f1c937d627c440a2f4aae112224ce8",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/gi-rs.webp",
+      "sha256": "ee0f781f7c091f6ce7ab9d95634fa767fb90027accd656ddb4e10979e9ce616d",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/logo.webp",
+      "sha256": "b65d62dc1920f91db564097ab7bc9074751939b345cd227aaa6864267450d45b",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/og.jpg",
+      "sha256": "bfee4105b4a212c2ab4c563419f31fd4267f5fcdee91b72bb3a3f3bfb1170be9",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/p-caulk.webp",
+      "sha256": "fa49edd9982f3b4b34b88e149cfd6fc6d1c99c3132294f243045388796e7caf4",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/p-flash.webp",
+      "sha256": "f4711081b1e28ed80d775d6deabddafda2464b11c372c061526832e7b84f4b07",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/p-pail.webp",
+      "sha256": "d336e1a23ce306179926bb6b8595d8fc0ef2f5e8e43485095edff4b648da9ffd",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/r-new.webp",
+      "sha256": "4282aaf7f66caffafef1035046fa5b4f79ea0c9a61a7c3b57f2daa48d38614bc",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/r-spray.webp",
+      "sha256": "8ea4de2ae1333e3fe560a5bde9323d308f28be69fe6f50f57a6f416644c0fb0c",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "assets/img/r-tech.webp",
+      "sha256": "8342cba3e6bdc9bae1502f59ec07c13f6e8a85cef2e4186aaf238af1fd0149e6",
+      "reason": "Preserved existing media bytes (not included in archive)."
+    },
+    {
+      "file": "robots.txt",
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95",
+      "reason": "Preserved existing host/noindex configuration or brand icon (not included in archive)."
+    },
+    {
+      "file": "vercel.json",
+      "sha256": "4fa9c7d7cac9ee61b30d517e8065a56fdce78d2b2d6597f044a47702dd818d3a",
+      "reason": "Preserved existing host/noindex configuration or brand icon (not included in archive)."
+    }
+  ],
+  "linkChanges": []
+}
