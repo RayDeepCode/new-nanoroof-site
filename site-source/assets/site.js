@@ -202,7 +202,7 @@ function route(){
   closeMenus(); closeDrawer(); setAud(slug);
   qa('.mlink').forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('data-route')===slug);if(a.getAttribute('data-route')===slug)a.setAttribute('aria-current','page');});
   trigs.forEach(function(t){t.classList.toggle('cur',GROUP[slug]===t.getAttribute('data-group'));});
-  var el=sub?document.getElementById(slug+'-'+sub):null;
+  var el=sub&&sub!=='main'?document.getElementById(slug+'-'+sub):null;
   if(el){setTimeout(function(){el.scrollIntoView({behavior:reduce?'auto':'smooth'});},30);}
   else{window.scrollTo({top:0,left:0,behavior:'instant'}); var h1=target.querySelector('h1'); if(h1){h1.setAttribute('tabindex','-1');h1.focus({preventScroll:true});}}
 }
