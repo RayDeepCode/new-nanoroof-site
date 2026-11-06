@@ -1723,15 +1723,15 @@ table.cmpt tr:last-child th,table.cmpt tr:last-child td{border-bottom:0}
   background:var(--page);color:var(--ink);
 }
 
-/* v7.8 mobile hit areas; retain the horizontally scrolling subnav. */
+/* v7.8 mobile hit areas; retain inline word spacing and horizontal scrolling. */
 @media (max-width:760px){
-  .f-grid li a{
-    display:inline-flex;align-items:center;min-width:44px;min-height:44px;
+  .f-grid li{margin-bottom:0}
+  .f-grid li a,.legal-links a,.crumbs a,.subnav a,.sps-sub a{
+    display:inline-block;min-width:44px;min-height:44px;
+    padding-top:9px;padding-bottom:9px;box-sizing:border-box;
   }
-  .chap li a{min-height:44px}
-  .legal-links a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
   .crumbs{align-items:center}
-  .crumbs a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
-  .subnav a,.otp a,.pb-strip a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
+  .otp a,.pb-strip a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
   a.logo{display:inline-flex;align-items:center;min-height:44px}
+  .w-list li a,.chap li a{min-height:44px}
 }
