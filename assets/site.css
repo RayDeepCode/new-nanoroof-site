@@ -744,7 +744,7 @@ section[id]{scroll-margin-top:170px}
 .walk-verdict.no{background:rgba(255,190,120,.16);color:#FFD9A8}
 .walk-nav{display:flex;gap:10px;margin-top:16px}
 .walk-nav button{flex:1;min-height:44px;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font:600 .95rem "Archivo",Helvetica,sans-serif;cursor:pointer}
-@media (max-width:900px){.walk{grid-template-columns:1fr}.pin{width:40px;height:40px}.pin span{width:26px;height:26px;font-size:.85rem}}
+@media (max-width:900px){.walk{grid-template-columns:1fr}.pin{width:44px;height:44px}.pin span{width:26px;height:26px;font-size:.85rem}}
 /* ===== the job, start to finish ===== */
 .jhead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
 .jhead .lead{max-width:58ch}
