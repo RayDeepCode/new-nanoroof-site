@@ -1705,3 +1705,33 @@ table.cmpt tr:last-child th,table.cmpt tr:last-child td{border-bottom:0}
 .vsl{aspect-ratio:16/9}.amap-img{aspect-ratio:16/9;object-fit:contain}
 /* Six initial trade choices: reserve their height before the runtime attaches. */
 .fn-step[data-s="1"] .fn-opts{min-height:386px}
+
+/* v6 mobile tap targets (WCAG 2.2 AA 2.5.8: 24px minimum) */
+@media (max-width:760px){
+  .crumbs a{display:inline-block;padding:5px 2px}
+  .f-grid li{margin-bottom:2px}
+  .f-grid li a{display:inline-block;padding:6px 0}
+  .sps-sub a{display:inline-block;padding:6px 0}
+}
+
+/* v7.8: reveal the skip link when reached by keyboard. */
+.sr:focus{
+  position:fixed;top:8px;left:8px;z-index:100;
+  width:auto;height:auto;min-width:44px;min-height:44px;
+  clip:auto;overflow:visible;white-space:normal;
+  display:inline-flex;align-items:center;padding:8px 12px;
+  background:var(--page);color:var(--ink);
+}
+
+/* v7.8 mobile hit areas; retain inline word spacing and horizontal scrolling. */
+@media (max-width:760px){
+  .f-grid li{margin-bottom:0}
+  .f-grid li a,.legal-links a,.crumbs a,.subnav a,.sps-sub a{
+    display:inline-block;min-width:44px;min-height:44px;
+    padding-top:9px;padding-bottom:9px;box-sizing:border-box;
+  }
+  .crumbs{align-items:center}
+  .otp a,.pb-strip a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
+  a.logo{display:inline-flex;align-items:center;min-height:44px}
+  .w-list li a,.chap li a{min-height:44px}
+}
