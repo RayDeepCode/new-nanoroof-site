@@ -2,13 +2,17 @@
 window.MK={"brand": "nr", "name": "NANOROOF", "phone": "1-877-643-NANO", "tel": "+18776436266", "ask": "Roof Life Assessment", "cta": "Get my free estimate", "ziplabel": "See what it costs to keep your roof", "host": "tools.nanoroof.com", "tools": {"request": ["Request a free Roof Life Assessment", "Pick a time, tell us about the roof. A Certified Dealer confirms."], "booking": ["Book a time", "Step 2 after a request: choose a slot on the calendar."], "estimator": ["Estimator", "Preserve or replace? See every option and what drives the price."], "dealer-application": ["Dealer application", "Apply to become a NANOROOF dealer, with the overview video and a call booking."], "quiz": ["Fit check", "Is your roof a candidate? 5 questions from the ground."], "photo-quote": ["Photo quote", "Send photos of your roof, get a pre-assessment."], "checklist": ["Ground checklist", "What to look for from the yard, step by step."], "comparison": ["Compare your options", "Every way to handle an aging roof, side by side."], "visualizer": ["Visualizer", "See a finish on your roof. Every image is labeled Visualization."], "care-plan": ["Care plan", "A year-round care plan for your roof."], "material-calculator": ["Material calculator", "Product quantities for a job, from the data sheet coverage rates."], "referral": ["Referral", "Know someone whose roof needs attention? Refer them."], "locator": ["Dealer locator", "Find a Certified Dealer by ZIP."], "portfolio": ["Project portfolio", "Real, dated jobs from Certified Dealers."], "training": ["Dealer training", "Certification training for signed-in dealers."]}, "img": ["booking", "care-plan", "checklist", "comparison", "dealer-application", "estimator", "locator", "material-calculator", "photo-quote", "portfolio", "quiz", "referral", "request", "training", "visualizer"], "home": ["quiz", "estimator", "photo-quote", "checklist", "comparison", "visualizer"], "pages": {"/": ["comparison"], "/assessment": ["request", "photo-quote"], "/contact": ["request", "locator"], "/preservation": ["estimator", "comparison"], "/products": ["estimator"], "/qualify": ["quiz"], "/homeowners": ["quiz"], "/roof-leaks": ["photo-quote", "checklist"], "/granule-loss": ["checklist"], "/curling-cracking": ["checklist"], "/algae-streaks": ["checklist"], "/colors": ["visualizer"], "/care-plan": ["care-plan"], "/tune-up": ["care-plan"], "/cleaning": ["care-plan"], "/technical-data": ["material-calculator"], "/contractors": ["dealer-application", "material-calculator", "training"], "/referral-partners": ["referral"], "/field-data": ["portfolio"]}};
 (function () {
   var M = window.MK, nr = M.brand === "nr";
+  // Site root = folder above /mockup/, so the mockup works at / or under any base path.
+  var ROOT = ((document.currentScript && document.currentScript.src) || (location.origin + "/mockup/mockup.js")).replace(/mockup\/mockup\.js.*$/, "");
   function path() {
-    var p = location.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
+    var href = location.href.split(/[?#]/)[0];
+    var p = href.indexOf(ROOT) === 0 ? "/" + href.slice(ROOT.length) : location.pathname;
+    p = p.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
     if (p.length > 1) p = p.replace(/\/$/, "");
     return p || "/";
   }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-  function toolUrl(k) { return "/mockup/tools/" + k + "/"; }
+  function toolUrl(k) { return ROOT + "mockup/tools/" + k + "/index.html"; }
   function el(h) { var t = document.createElement("template"); t.innerHTML = h.trim(); return t.content.firstChild; }
 
   function flag() {
@@ -58,7 +62,7 @@ window.MK={"brand": "nr", "name": "NANOROOF", "phone": "1-877-643-NANO", "tel": 
     first.insertAdjacentHTML("afterend", '<section class="mk-sec mk" id="mk-tools"><div class="in"><h2>Plan it yourself, in minutes</h2><p class="l">Free tools. No contact details until you ask for an inspection.</p><div class="mk-grid">' + cards + '</div></div></section>');
   }
   function toolCard(k) {
-    var t = M.tools[k], img = M.img.indexOf(k) >= 0 ? '<div class="shot"><img src="/mockup/img/' + k + '.jpg" alt="' + esc(t[0]) + ' preview" loading="lazy"></div>' : "";
+    var t = M.tools[k], img = M.img.indexOf(k) >= 0 ? '<div class="shot"><img src="' + ROOT + 'mockup/img/' + k + '.jpg" alt="' + esc(t[0]) + ' preview" loading="lazy"></div>' : "";
     return '<div class="mk-tool">' + img + '<div class="tx"><h3>' + esc(t[0]) + '</h3><p>' + esc(t[1]) + '</p><a class="go" href="' + toolUrl(k) + '">Open ' + esc(t[0].toLowerCase()) + '</a>' +
       '<p class="mk-note">Mockup: the live tool loads here from ' + M.host + '. If it can\'t load, a "Call ' + esc(M.phone) + '" link shows instead.</p></div></div>';
   }
