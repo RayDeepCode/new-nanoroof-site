@@ -10,7 +10,7 @@ var FAQ={
  leak:['Will it stop my roof from leaking?','No. Most roof leaks come from flashings around chimneys, skylights and walls, not from the shingles. Your dealer repairs those first during the tune-up, and the assessment will point them out.'],
  new:["Can I treat a new roof?", "A dealer can check your roof and tell you when it makes sense."],
  old:['My roof is over 20 years old. Is it too late?','Not always. It depends on condition rather than age: granule loss, brittleness and the decking underneath. The assessment answers it for your roof.'],
- 'qualify-who':['Who decides whether my roof qualifies?','The certified dealer, at the roof-life assessment, based on the shingles, the decking and the flashings. You get the reason in writing either way.'],
+ 'qualify-who':['Who decides whether my roof qualifies?','The Certified Contractor, at the roof-life assessment, based on the shingles, the decking and the flashings. You get the reason in writing either way.'],
 
 
 
@@ -29,7 +29,7 @@ var FAQ={
  insure:['Will my insurance company accept a preserved roof?','Each insurer sets its own rules on roof age and condition, so we can\u2019t promise how yours will treat it. Your Roof Record gives an inspector the photos, readings and warranty from the job.'],
  day:['What happens on the day?','The crew washes and preps the roof, checks shingle moisture, sprays the treatment, leaves a test sample and records the readings. No tear-off.'],
  temp:["Can NANOROOF be applied in winter?", "Spray-applied; it isn’t applied in cold weather."],
- buy:['Can I buy NANOROOF and apply it myself?','No. NANOROOF products are professional-grade and sold only to trained, certified NANOROOF Certified Dealers, not to homeowners or at retail. The result depends on the whole protocol: the assessment, repairs, soft wash, baseline readings, metered application and registration. Only a certified dealer can register the job, and the warranty depends on that registration.'],
+ buy:['Can I buy NANOROOF and apply it myself?','No. NANOROOF products are professional-grade and sold only to trained, certified NANOROOF Certified Contractors, not to homeowners or at retail. The result depends on the whole protocol: the assessment, repairs, soft wash, baseline readings, metered application and registration. Only a Certified Contractor can register the job, and the warranty depends on that registration.'],
  tune1:['What does a tune-up include?','Flashings inspected and repaired, gutters cleared, damaged shingles replaced, loose shingles secured, penetrations repaired, attic ventilation checked, valleys cleared, eaves and soffits inspected, branches trimmed and drainage checked.'],
  tune2:['How often should I get a tune-up?','At least once a year, after severe weather, and before selling your home.'],
  tune3:['Can a tune-up prevent leaks?','It reduces the risk by repairing flashings, securing loose shingles and fixing weak spots before water finds them.']
@@ -220,11 +220,11 @@ var T={ 'how-it-works':['Why shingles fail','The seven-stage aging loop'],'silic
  'property-owners':['Portfolios and HOAs','Portfolios, HOAs and multifamily'],
  'faq':['FAQ','Straight answers'],'learn':['Guides','Plain answers for homeowners'],'moisture':['The moisture myth','The SPS System'],'field-data':['Field Data','Condition, measured'],
  'about':['About NANOROOF','Who we are and what we believe'],'sustainability':['Sustainability','A roof kept is a roof not landfilled'],
- 'contact':['Contact','Reach the right person'],'contractors':['Become a dealer','Become a NANOROOF Certified Dealer'],
+ 'contact':['Contact','Reach the right person'],'contractors':['Become a dealer','Become a NANOROOF Certified Contractor'],
  'referral-partners':['Referral partners','For agents and inspectors'],'homeowners':['For homeowners','Preservation, explained'],'architects':['For architects','Spec-ready documentation'] };
 var F={ 'how-it-works':['7-stage aging loop','Bonds inside, encapsulates'],'silicone':['Named in 1904','Water-based and recoatable'],
  'repair-products':['Professional-grade','Used in every tune-up','Damp and cold tolerant caulk'],'cleaning-products':['Professional-grade','Roof cleaning','Clean before every treatment'],'technical-data':['Professional-grade','Repair and cleaning products','Data sheets on request'],'science':['Silicone for shingles','Residential asphalt shingles','One chemistry per roof'],'granule-loss':['UV loosens granules','Early loss is treatable','Free assessment'],'algae-streaks':['Soft wash, not pressure','Granules stay on'],'curling-cracking':['Catch it early','Secured in the tune-up','Checked for flexibility'],'roof-leaks':['Most start at flashings','Repaired first','Then decide'],'roof-system':['8 parts of the roof checked','Repairs before treatment','An honest no when it won\u2019t work'],'qualify':['Free assessment','A written yes or no','Repairs priced separately'],
- 'products':['Professional-grade','Sold only to certified dealers','The SPS System'],'assessment':['Free','25-point inspection scored out of 250','Written report with photos'],
+ 'products':['Professional-grade','Sold only to Certified Contractors','The SPS System'],'assessment':['Free','25-point inspection scored out of 250','Written report with photos'],
  'tune-up':['10 points','Before every treatment','Recoat timing is set at the Care-Plan inspection'],'cleaning':['Low-pressure soft wash','roof cleaner','Landscaping protected'],
  'preservation':['6 steps','Applied to the existing roof','Every step on record'],'care-plan':['Scheduled check-ups','Readings compared to day one','The Care-Plan only adds coverage'],
  'sps':['Professional-grade','Dealer-applied','Registered warranty'],'colors':['Ask for approved color options','Restores faded roofs','See a sample on your roof'],
