@@ -1236,6 +1236,7 @@ section[id]{scroll-margin-top:170px}
 .hphone{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;color:#194890;margin-right:6px}
 .hphone svg{width:22px;height:22px}
 .hphone:hover{background:#F2F6FC}
+.hphone:not(:has(svg)){width:auto;padding:0 10px;white-space:nowrap;font-weight:700}
 .f-brand{display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:28px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.12)}
 .f-brand .logo img{height:44px;width:auto}
 .f-brand p{margin:0;flex:1;min-width:240px;color:#C9D6EA}
