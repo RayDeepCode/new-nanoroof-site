@@ -45,7 +45,7 @@ window.MK={"brand": "nr", "name": "NANOROOF", "phone": "1-877-643-NANO", "tel": 
       var ps = h.querySelectorAll("p"), last = ps[ps.length - 1] || h.querySelector("h1");
       last.insertAdjacentHTML("afterend", zipCard());
     } else {
-      var a = [].filter.call(document.querySelectorAll("a"), function (x) { return x.textContent.trim() === "Call to find a Certified Dealer"; })[0];
+      var a = [].filter.call(document.querySelectorAll("a"), function (x) { return x.textContent.trim() === "Call to find a Certified Contractor"; })[0];
       if (!a) return;
       a.parentElement.insertAdjacentHTML("beforebegin", zipCard()); a.parentElement.style.display = "none";
     }
