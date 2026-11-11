@@ -1,5 +1,5 @@
 /* Design mockup v1. Injects the approved changes at runtime so the page source stays identical to the site. */
-window.MK={"live": [], "brand": "nr", "name": "NANOROOF", "phone": "1-877-643-NANO", "tel": "+18776436266", "ask": "Roof-Life Assessment", "cta": "Get my free estimate", "ziplabel": "See what it costs to keep your roof", "host": "tools.nanoroof.com", "tools": {"request": ["Request a Free Roof-Life Assessment", "Pick a time, tell us about the roof. A Certified Contractor confirms."], "booking": ["Book a time", "Step 2 after a request: choose a slot on the calendar."], "estimator": ["Estimator", "Preserve or replace? See every option and what drives the price."], "dealer-application": ["Contractor application", "Apply to become a NANOROOF contractor, with the overview video and a call booking."], "quiz": ["Fit check", "Is your roof a candidate? 5 questions from the ground."], "photo-quote": ["Photo quote", "Send photos of your roof, get a pre-assessment."], "checklist": ["Ground checklist", "What to look for from the yard, step by step."], "comparison": ["Compare your options", "Every way to handle an aging roof, side by side."], "visualizer": ["Visualizer", "See a finish on your roof. Every image is labeled Visualization."], "care-plan": ["Care plan", "A year-round care plan for your roof."], "material-calculator": ["Material calculator", "Product quantities for a job, from the data sheet coverage rates."], "referral": ["Referral", "Know someone whose roof needs attention? Refer them."], "locator": ["Contractor locator", "Find a Certified Contractor by ZIP."], "portfolio": ["Project portfolio", "Real, dated jobs from Certified Contractors."], "training": ["Contractor training", "Certification training for signed-in contractors."]}, "img": ["booking", "care-plan", "checklist", "comparison", "dealer-application", "estimator", "locator", "material-calculator", "photo-quote", "portfolio", "quiz", "referral", "request", "training", "visualizer"], "home": ["quiz", "estimator", "photo-quote", "checklist", "comparison", "visualizer"], "pages": {"/": ["comparison"], "/cost": ["estimator", "request"], "/assessment": ["request", "photo-quote"], "/contact": ["request", "locator"], "/preservation": ["estimator", "comparison"], "/products": ["estimator"], "/qualify": ["quiz"], "/homeowners": ["quiz"], "/roof-leaks": ["photo-quote", "checklist"], "/granule-loss": ["checklist"], "/curling-cracking": ["checklist"], "/algae-streaks": ["checklist"], "/colors": ["visualizer"], "/care-plan": ["care-plan"], "/tune-up": ["care-plan"], "/cleaning": ["care-plan"], "/technical-data": ["material-calculator"], "/contractors": ["dealer-application", "material-calculator", "training"], "/referral-partners": ["referral"], "/field-data": ["portfolio"]}};
+window.MK={"live": [], "brand": "nr", "name": "NANOROOF", "phone": "1-877-643-NANO", "tel": "+18776436266", "ask": "Roof-Life Assessment", "cta": "Get my free estimate", "ziplabel": "See what it costs to keep your roof", "host": "tools.nanoroof.com", "tools": {"request": ["Request a Free Roof-Life Assessment", "Pick a time, tell us about the roof. A Certified Contractor confirms."], "booking": ["Book a time", "Step 2 after a request: choose a slot on the calendar."], "estimator": ["Estimator", "Preserve or replace? See every option and what drives the price."], "dealer-application": ["Contractor application", "Apply to become a NANOROOF contractor, with the overview video and a call booking."], "quiz": ["Fit check", "Is your roof a candidate? 5 questions from the ground."], "photo-quote": ["Photo quote", "Send photos of your roof, get a pre-assessment."], "checklist": ["Ground checklist", "What to look for from the yard, step by step."], "comparison": ["Compare your options", "Every way to handle an aging roof, side by side."], "visualizer": ["Visualizer", "See a finish on your roof. Every image is labeled Visualization."], "care-plan": ["Care plan", "A year-round care plan for your roof."], "material-calculator": ["Material calculator", "Product quantities for a job, from the data sheet coverage rates."], "referral": ["Referral", "Know someone whose roof needs attention? Refer them."], "locator": ["Contractor locator", "Find a Certified Contractor by ZIP."], "portfolio": ["Project portfolio", "Real, dated jobs from Certified Contractors."], "training": ["Contractor training", "Certification training for signed-in contractors."]}, "img": ["booking", "care-plan", "checklist", "comparison", "dealer-application", "estimator", "locator", "material-calculator", "photo-quote", "portfolio", "quiz", "referral", "request", "training", "visualizer"], "home": ["quiz", "estimator", "photo-quote", "checklist", "comparison", "visualizer"], "pages": {"/": ["comparison"], "/cost": ["estimator", "request"], "/assessment": ["request", "photo-quote"], "/warranty": ["care-plan"], "/contact": ["request", "locator"], "/preservation": ["estimator", "comparison"], "/products": ["estimator"], "/qualify": ["quiz"], "/homeowners": ["quiz"], "/roof-leaks": ["photo-quote", "checklist"], "/granule-loss": ["checklist"], "/curling-cracking": ["checklist"], "/algae-streaks": ["checklist"], "/colors": ["visualizer"], "/care-plan": ["care-plan"], "/tune-up": ["care-plan"], "/cleaning": ["care-plan"], "/technical-data": ["material-calculator"], "/contractors": ["dealer-application", "material-calculator", "training"], "/referral-partners": ["referral"], "/field-data": ["portfolio"]}};
 (function () {
   var M = window.MK, nr = M.brand === "nr";
   // Site root = folder above /mockup/, so the mockup works at / or under any base path.
@@ -418,11 +418,31 @@ window.MK_ICONS={"arrow-down-to-line": "<svg xmlns=\"http://www.w3.org/2000/svg\
 
   window.MK_PLACE = function () { try { trust(); wbHero(); } catch (e) {} };
 
+  // Company band above the footer: who is behind the site, in four plain facts.
+  function company() {
+    if (document.getElementById("mk-co") || /mockup\/tools/.test(location.pathname)) return;
+    var f = document.querySelector("footer, .wbf"); if (!f) return;
+    var items = nr ? [["building-2", "NANO Products, LLC dba NANOROOF", "West Palm Beach, Florida"], ["badge-check", "Professional-grade", "Sold only to trained Certified Contractors"], ["shield-check", "Written limited warranty", "Registered to the property"], ["phone", M.phone, "info@nanoroof.com"]]
+                   : [["building-2", "WetBond Systems LLC", "St. Petersburg, Florida"], ["badge-check", "Professional-grade", "Sold only to applicators and Certified Contractors"], ["shield-check", "Written limited warranty", "Backed by WetBond Systems LLC"], ["phone", M.phone, "info@wetbond.com"]];
+    f.insertAdjacentHTML("beforebegin", '<section class="mk mk-co" id="mk-co" aria-label="About the company"><div class="in">' + items.map(function (i) { return '<div><span class="mk-ic">' + svg(i[0], 22) + "</span><p><b>" + i[1] + "</b><span>" + i[2] + "</span></p></div>"; }).join("") + "</div></section>");
+  }
+
   function fab() {
     if (document.getElementById("mk-fab") || PRO.test(path())) return;
     var a = document.createElement("a"); a.id = "mk-fab"; a.className = "mk mk-fab"; a.href = toolUrl("request");
     a.innerHTML = svg("clipboard-check", 18) + "<span>" + offer + "</span>"; document.body.appendChild(a);
     var on = false; addEventListener("scroll", function () { var s = scrollY > innerHeight * 0.9; if (s !== on) { on = s; a.classList.toggle("on", s); } }, { passive: true });
+  }
+
+  function orphans() {
+    var main = mainEl();
+    [].forEach.call(main.querySelectorAll("*"), function (g) {
+      if (g.dataset.mkOrph || g.closest(".mk, table")) return; var c = getComputedStyle(g);
+      if (c.display !== "grid" || c.gridTemplateColumns.split(" ").length !== 2) return;
+      var k = [].filter.call(g.children, vis); if (k.length < 3 || k.length % 2 === 0) return;
+      var a = k[0].getBoundingClientRect(), b = k[1].getBoundingClientRect(); if (Math.abs(a.top - b.top) > 4 || Math.abs(a.width - b.width) > 8) return;
+      g.dataset.mkOrph = "1"; k[k.length - 1].style.gridColumn = "1 / -1";
+    });
   }
 
   function phone() {
@@ -440,16 +460,9 @@ window.MK_ICONS={"arrow-down-to-line": "<svg xmlns=\"http://www.w3.org/2000/svg\
       if (d === "inline") e.style.display = "inline-flex";
       e.style.alignItems = e.style.alignItems || "center"; e.style.minHeight = "44px";
     });
-    [].forEach.call(main.querySelectorAll("*"), function (g) {
-      if (g.dataset.mkOrph || g.closest(".mk, table")) return; var c = getComputedStyle(g);
-      if (c.display !== "grid" || c.gridTemplateColumns.split(" ").length !== 2) return;
-      var k = [].filter.call(g.children, vis); if (k.length < 3 || k.length % 2 === 0) return;
-      var a = k[0].getBoundingClientRect(), b = k[1].getBoundingClientRect(); if (Math.abs(a.top - b.top) > 4 || Math.abs(a.width - b.width) > 8) return;
-      g.dataset.mkOrph = "1"; k[k.length - 1].style.gridColumn = "1 / -1";
-    });
   }
 
-  function run() { try { density(); heroCta(); trust(); wbHero(); fab(); phone(); } catch (e) { if (window.console) console.warn("convert", e); } if (!window.MK_READY || window.MK_READY()) document.documentElement.classList.remove("mk-wait"); }
+  function run() { try { density(); heroCta(); trust(); wbHero(); company(); fab(); orphans(); phone(); } catch (e) { if (window.console) console.warn("convert", e); } if (!window.MK_READY || window.MK_READY()) document.documentElement.classList.remove("mk-wait"); }
   // WetBond pages re-render themselves after load; show the page once that has settled (capped by the page's own timer)
   var q; function quiet() { clearTimeout(q); q = setTimeout(function () { window.__mkQuiet = true; run(); }, 300); }
   quiet();

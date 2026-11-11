@@ -1736,3 +1736,8 @@ table.cmpt tr:last-child th,table.cmpt tr:last-child td{border-bottom:0}
   a.logo{display:inline-flex;align-items:center;min-height:44px}
   .w-list li a,.chap li a{min-height:44px}
 }
+
+/* corp: header phone number shown as text on desktop, like WetBond */
+@media(min-width:1100px){.head-right .hphone:has(svg){width:auto;padding:0 12px;gap:8px}.head-right .hphone:has(svg)::after{content:"1-877-643-NANO";font:800 1rem "Archivo",Helvetica,sans-serif;color:#0E2547;white-space:nowrap}}
+.ulinks{display:flex;gap:18px}
+/* corp: no underline */.head-right .hphone{text-decoration:none}
