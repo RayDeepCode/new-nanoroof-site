@@ -324,6 +324,144 @@ document.addEventListener('click',function(e){ var a=e.target.closest('a,button'
   form.addEventListener('change',score);
 })();
 
+/* ---------- keep-vs-replace planner ---------- */
+(function(){
+  var roots=qa('[data-costplan]'); if(!roots.length) return;
+  var money=function(n){ return '$'+Math.round(n).toLocaleString('en-US'); };
+  var parseMoney=function(v){ var n=parseFloat(String(v||'').replace(/[^0-9.]/g,'')); return (n&&n>0)?n:null; };
+  roots.forEach(function(root){
+    var areaEl=root.querySelector('[data-cp="area"]');
+    var areaOut=root.querySelector('[data-cp="areaOut"]');
+    var replIn=root.querySelector('[data-cp="replQuote"]');
+    var presIn=root.querySelector('[data-cp="presQuote"]');
+    var result=root.querySelector('[data-cp="result"]');
+    function upd(){
+      var area=parseFloat(areaEl.value)||2000; if(area<500) area=500; if(area>12000) area=12000;
+      if(areaOut) areaOut.textContent=Math.round(area).toLocaleString('en-US')+' sq ft';
+      var replLo=area*4.5, replHi=area*8.5, replMid=(replLo+replHi)/2;
+      var replQ=parseMoney(replIn&&replIn.value), presQ=parseMoney(presIn&&presIn.value);
+      var repl=replQ||replMid, max=Math.max(repl, presQ||repl*0.55, 1);
+      var replPct=Math.min(100, Math.round(repl/max*100));
+      var litterLo=(area*2/2000), litterHi=(area*5/2000);
+      var replLabel=replQ?('Your replacement quote: '+money(replQ)):('Replacement planning range: '+money(replLo)+'–'+money(replHi));
+      var presHtml, verdict, save='';
+      if(presQ){
+        var pPct=Math.min(100, Math.round(presQ/max*100));
+        presHtml='<div class="bar-row"><div class="bar-top"><b>Preservation (your quote)</b><span class="amt">'+money(presQ)+'</span></div><div class="track"><span class="span pres" style="left:0;width:'+pPct+'%"></span></div></div>';
+        if(replQ||!replQ){ var diff=repl-presQ; if(diff>0) save='<p class="cost-save">About '+money(diff)+' under the replacement figure above — before repairs, which are priced separately.</p>'; }
+        verdict='Side-by-side from numbers you entered. A free assessment still confirms whether preservation is even an option, and locks dealer pricing.';
+      } else {
+        presHtml='<div class="bar-row"><div class="bar-top"><b>Preservation</b><span class="amt">Dealer confirms</span></div><div class="track"><span class="span ask" style="width:55%"></span></div></div>';
+        verdict='NANOROOF dealers put a preservation price next to replacement after the free assessment. We do not invent a homeowner rate here.';
+      }
+      result.hidden=false;
+      result.innerHTML=
+        '<span class="conf">Planning view · not a quote</span>'+
+        '<p class="verdict">'+verdict+'</p>'+
+        '<div class="bar-row"><div class="bar-top"><b>'+(replQ?'Replacement (your quote)':'Replacement (national planning range)')+'</b><span class="amt">'+(replQ?money(replQ):money(replLo)+'–'+money(replHi))+'</span></div><div class="track"><span class="span repl" style="left:0;width:'+replPct+'%"></span></div></div>'+
+        presHtml+save+
+        '<div class="disrupt"><div class="dcell"><b>Tear-off &amp; replace</b><ul><li>Dumpster + landfill haul</li><li>Multi-day crew noise</li><li>~'+litterLo.toFixed(1)+'–'+litterHi.toFixed(1)+' tons debris (order of magnitude)</li></ul></div><div class="dcell ours"><b>Preserve (if it qualifies)</b><ul><li>No full tear-off dumpster</li><li>Usually shorter on-site window</li><li>Photos, moisture &amp; sample go into a Roof Record</li></ul></div></div>'+
+        '<p class="proto">Replacement band uses public U.S. asphalt shingle planning ranges of about $4.50–$8.50 per sq ft installed (2025 consumer estimators). Local labor, pitch, layers and repairs move the number. '+replLabel+'.</p>'+
+        '<div class="acts" style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-green" href="/assessment/">Get real side-by-side numbers</a><a class="btn btn-line" href="/qualify/#check">5-question check</a></div>';
+      if(window.nrTrack) window.nrTrack('cost_plan',{area:area,has_repl:!!replQ,has_pres:!!presQ});
+    }
+    ['input','change'].forEach(function(ev){
+      areaEl.addEventListener(ev,upd);
+      if(replIn) replIn.addEventListener(ev,upd);
+      if(presIn) presIn.addEventListener(ev,upd);
+    });
+    upd();
+  });
+})();
+
+/* ---------- preservation stepped timeline ---------- */
+(function(){
+  var root=document.querySelector('[data-ptime]'); if(!root) return;
+  var steps=JSON.parse(document.getElementById('ptimeData').textContent);
+  var nav=root.querySelector('.ptime-nav');
+  var panel=root.querySelector('.ptime-panel');
+  var i=0;
+  function show(n){
+    i=(n+steps.length)%steps.length; var s=steps[i];
+    qa('button',nav).forEach(function(b,k){ b.classList.toggle('on',k===i); b.setAttribute('aria-current',k===i?'step':'false'); });
+    panel.innerHTML='<p class="stepk">Step '+(i+1)+' of '+steps.length+'</p><h3>'+s.t+'</h3><p>'+s.b+'</p><p class="rec"><b>On the record:</b> '+s.r+'</p><div class="ptime-actions"><button type="button" class="btn btn-line" data-ptime-prev>Previous</button><button type="button" class="btn btn-green" data-ptime-next>'+(i===steps.length-1?'Back to step 1':'Next step')+'</button></div>';
+    panel.querySelector('[data-ptime-prev]').addEventListener('click',function(){ show(i-1); });
+    panel.querySelector('[data-ptime-next]').addEventListener('click',function(){ show(i+1); });
+  }
+  nav.innerHTML=steps.map(function(s,k){ return '<li><button type="button" data-i="'+k+'"><span class="n">'+(k+1)+'</span><span>'+s.t+'</span></button></li>'; }).join('');
+  qa('button',nav).forEach(function(b){ b.addEventListener('click',function(){ show(+b.getAttribute('data-i')); }); });
+  show(0);
+})();
+
+/* ---------- silicone cross-section layer toggle ---------- */
+(function(){
+  var root=document.querySelector('[data-xsect]'); if(!root) return;
+  var svg=root.querySelector('.xsect-svg');
+  var cap=root.querySelector('.xsect-cap');
+  var copy={
+    aged:'Aged asphalt shingle: granules thinning, binder drying out — nothing protecting the field yet.',
+    coat:'Surface coating: a film sits on the granules. The weathered asphalt underneath is still untreated, and films can crack as the shingle moves.',
+    pen:'Penetrating treatment: oils or nano-silica soak into the asphalt. Nothing stays on top, so granules are not encapsulated.',
+    sps:'NANOROOF SPS: bonds inside the weathered asphalt and forms a thin encapsulating layer over the granules — inside and on top.'
+  };
+  qa('[data-layer]',root).forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.getAttribute('data-layer');
+      qa('[data-layer]',root).forEach(function(x){ x.setAttribute('aria-checked',x===b?'true':'false'); });
+      svg.setAttribute('data-mode',k==='aged'?'':k);
+      cap.textContent=copy[k]||'';
+      if(window.nrTrack) window.nrTrack('xsect_layer',{layer:k});
+    });
+  });
+})();
+
+/* ---------- symptom severity guide ---------- */
+(function(){
+  var SEV={
+    granule:{
+      early:{cls:'ok',t:'Early loss — usually a good candidate',b:'A little grit in the gutters on an older roof, with granules still covering most of the field, is exactly when preservation helps most.'},
+      mid:{cls:'warn',t:'Moderate thinning — assess soon',b:'Darker, smoother patches mean UV is reaching asphalt. A dealer measures what is left, slope by slope, before anyone sprays.'},
+      far:{cls:'no',t:'Bare mat across large areas — usually too far',b:'When granules are mostly gone and the mat shows, shingles often cannot be saved. An assessment can still document that in writing.'}
+    },
+    algae:{
+      early:{cls:'ok',t:'Streaks only — wash, then consider preserve',b:'Black algae streaks are common and usually come off with a low-pressure soft wash. Preservation can follow on a sound roof.'},
+      mid:{cls:'warn',t:'Moss holding water — clean first',b:'Moss and lichen hold moisture against the roof. Soft wash and repairs come before any treatment decision.'},
+      far:{cls:'no',t:'Growth plus soft deck or bare patches',b:'If decking feels soft underfoot or granules are largely gone under the growth, preservation is usually off the table until structure is sorted.'}
+    },
+    curl:{
+      early:{cls:'ok',t:'Light cupping — often still treatable',b:'Early curl and edge lift can be secured in the tune-up. Flexibility and deck soundness decide the rest.'},
+      mid:{cls:'warn',t:'Cracks appearing — get eyes on it',b:'Surface cracks mean the binder is drying. Assessment checks whether enough sound shingle remains.'},
+      far:{cls:'no',t:'Brittle, broken tabs — often replace territory',b:'When tabs snap and large areas are fractured, replacement is commonly the honest answer.'}
+    },
+    leak:{
+      early:{cls:'warn',t:'Stain or drip — repair path first',b:'Most leaks start at flashings, not the shingle field. Find and fix the path; then decide on preservation.'},
+      mid:{cls:'warn',t:'Active leak — stop water, then assess',b:'Active water intrusion is a repair problem. Preservation does not seal a failed flashing or wet structure.'},
+      far:{cls:'no',t:'Soft deck from long-term leaks',b:'Soft or sagging decking usually rules preservation out. Document it, then plan repair or replacement.'}
+    }
+  };
+  qa('[data-sev]').forEach(function(root){
+    var kind=root.getAttribute('data-sev'); var data=SEV[kind]; if(!data) return;
+    var out=root.querySelector('.sev-out');
+    function set(level){
+      var s=data[level]; if(!s) return;
+      qa('button',root).forEach(function(b){ b.setAttribute('aria-checked',b.getAttribute('data-level')===level?'true':'false'); });
+      out.className='sev-out '+s.cls;
+      out.innerHTML='<b>'+s.t+'</b><p>'+s.b+'</p><div class="acts"><a class="btn btn-green" href="/assessment/">Roof-life assessment</a><a class="btn btn-line" href="/qualify/#check">5-question check</a></div>';
+    }
+    qa('button',root).forEach(function(b){ b.addEventListener('click',function(){ set(b.getAttribute('data-level')); }); });
+    set('early');
+  });
+})();
+
+/* ---------- light scroll reveal ---------- */
+(function(){
+  var nodes=qa('.reveal'); if(!nodes.length) return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ nodes.forEach(function(n){ n.classList.add('on'); }); return; }
+  if(!('IntersectionObserver' in window)){ nodes.forEach(function(n){ n.classList.add('on'); }); return; }
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } }); },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  nodes.forEach(function(n){ io.observe(n); });
+})();
+
 /* ---------- social profiles: fill in the URLs; empty = icon shown, no link ---------- */
 (function(){ var SOCIAL={facebook:'',linkedin:'',instagram:'',youtube:''};
   qa('a[data-social]').forEach(function(a){ var u=SOCIAL[a.getAttribute('data-social')];
