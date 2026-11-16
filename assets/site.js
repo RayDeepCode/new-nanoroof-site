@@ -24,6 +24,7 @@ var FAQ={
  sealer:["How is it different from a roof coating or a rejuvenator?", "NANOROOF penetrates and bonds inside asphalt shingles and adds a surface layer."],
  how:['What is NANOROOF made of?','NANOROOF is a water-based silicone elastomer made with proprietary nano-chemistry, designed for asphalt shingles. It\u2019s applied by spray.'],
  w2:['What does \u201cuseful life\u201d mean?','The period during which the shingles can reasonably be expected to protect the roof structure underneath.'],
+ w1:['Is there a warranty?','Yes. Registered jobs carry a limited material warranty. Terms, length and exclusions are in the written warranty your dealer provides before you buy.'],
  w3:['Does my shingle manufacturer\u2019s warranty matter?','The NANOROOF warranty stays valid even if your shingle manufacturer\u2019s warranty has expired or can\u2019t be transferred.'],
  w4:['What isn\u2019t covered?','Acts of God and natural disasters, roof leaks, structural failures, failures of earlier coatings, unforeseen environmental conditions, and damage from faulty application or inadequate repairs.'],
  insure:['Will my insurance company accept a preserved roof?','Each insurer sets its own rules on roof age and condition, so we can\u2019t promise how yours will treat it. Your Roof Record gives an inspector the photos, readings and warranty from the job.'],
@@ -202,7 +203,7 @@ function route(){
   closeMenus(); closeDrawer(); setAud(slug);
   qa('.mlink').forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('data-route')===slug);if(a.getAttribute('data-route')===slug)a.setAttribute('aria-current','page');});
   trigs.forEach(function(t){t.classList.toggle('cur',GROUP[slug]===t.getAttribute('data-group'));});
-  var el=sub&&sub!=='main'?document.getElementById(slug+'-'+sub):null;
+  var el=sub&&sub!=='main'?(document.getElementById(slug+'-'+sub)||document.getElementById(sub)):null;
   if(el){setTimeout(function(){el.scrollIntoView({behavior:reduce?'auto':'smooth'});},30);}
   else{window.scrollTo({top:0,left:0,behavior:'instant'}); var h1=target.querySelector('h1'); if(h1){h1.setAttribute('tabindex','-1');h1.focus({preventScroll:true});}}
 }
@@ -299,6 +300,29 @@ document.addEventListener('click',function(e){ var a=e.target.closest('a,button'
   else if(a.classList.contains('btn')) track('cta_click',{label:(a.textContent||'').trim().slice(0,60),target:h});
 },true);
 (function(){ var q=document.getElementById('faqq'); if(q){ var t; q.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(function(){ if(q.value.trim()) track('faq_search'); },900); }); } })();
+
+
+/* ---------- 5-question qualify check ---------- */
+(function(){
+  var form=document.getElementById('qcheckForm'); if(!form) return;
+  var out=document.getElementById('qcheckOut');
+  var keys=['asphalt','deck','granules','leak','age'];
+  function score(){
+    var a={}; keys.forEach(function(k){ var el=form.querySelector('input[name="'+k+'"]:checked'); a[k]=el?el.value:null; });
+    if(keys.some(function(k){return !a[k];})){ out.hidden=true; return; }
+    var cls='ok', title='Likely worth assessing', body='Based on your answers, a free roof-life assessment is the next step. A dealer will confirm in writing.';
+    if(a.asphalt==='no'){ cls='no'; title='Not a NANOROOF substrate'; body='SPS is for asphalt shingles. Metal, tile, slate and membrane roofs need a different approach.'; }
+    else if(a.deck==='soft'){ cls='no'; title='Soft decking usually means no'; body='Preservation needs a sound deck. Soft spots or structural damage typically point to repair or replacement first.'; }
+    else if(a.granules==='bare'){ cls='no'; title='Too far gone for preservation'; body='When granules are mostly gone and the mat shows, the shingles usually cannot be saved. An assessment can still document that.'; }
+    else if(a.leak==='yes'){ cls='fix'; title='Fix the leak path first'; body='Most leaks start at flashings, not the shingle field. Repairs come before any treatment—then the assessment decides on preservation.'; }
+    else if(a.age==='new'){ cls='fix'; title='Probably too early'; body='New shingles often need the factory surface to wear in before treatment bonds well. Ask a dealer when to recheck.'; }
+    else if(a.deck==='unsure'||a.granules==='unsure'){ cls='fix'; title='Worth a closer look'; body='Some answers need eyes on the roof. The free assessment settles decking, granule loss and fit.'; }
+    out.className='qresult '+cls; out.hidden=false;
+    out.innerHTML='<b>'+title+'</b><p>'+body+'</p><div class="acts"><a class="btn btn-green" href="/assessment/">Roof-life assessment</a><a class="btn btn-line" href="/contact/">Contact us</a></div>';
+    if(window.nrTrack) window.nrTrack('qualify_check',{result:cls});
+  }
+  form.addEventListener('change',score);
+})();
 
 /* ---------- social profiles: fill in the URLs; empty = icon shown, no link ---------- */
 (function(){ var SOCIAL={facebook:'',linkedin:'',instagram:'',youtube:''};
