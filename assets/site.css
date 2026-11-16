@@ -264,8 +264,9 @@ footer{background:var(--fill);border-top:4px solid var(--green);padding:56px 0 c
 
 .mbar{display:none}
 @media (max-width:620px){
-  .btn{width:100%}
-  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--page);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+  .phero .acts .btn,.hero .acts .btn,.next .acts .btn{width:100%}
+  .mbar{display:flex;gap:10px;align-items:center;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--page);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+  .mbar .btn{flex:1;width:auto;min-height:44px;padding:0 12px;font-size:.92rem}
   body{padding-bottom:72px}
   .section{padding:64px 0}
 }
@@ -1736,3 +1737,26 @@ table.cmpt tr:last-child th,table.cmpt tr:last-child td{border-bottom:0}
   a.logo{display:inline-flex;align-items:center;min-height:44px}
   .w-list li a,.chap li a{min-height:44px}
 }
+
+/* ===== upgrade: qualify check (light) + moisture diagram ===== */
+.m-lab .qcheck fieldset,.m-steel .qcheck fieldset{background:var(--card);border-color:var(--line)}
+.m-lab .qcheck legend,.m-steel .qcheck legend{color:var(--ink);float:none}
+.m-lab .qcheck label,.m-steel .qcheck label{color:var(--body)}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
+.hero-center .acts{justify-content:center}
+.breath{width:100%;height:auto;display:block}
+.breath .layer{fill:var(--asph)}
+.breath .gran{fill:var(--granule)}
+.breath .sil{fill:#6CB743;fill-opacity:.55}
+.breath .drop{fill:#5B8BD6}
+.breath .vapor{stroke:#9FB3D1;stroke-width:1.5;stroke-dasharray:3 3;fill:none}
+.breath .lbl{fill:var(--muted);font:600 12px Archivo,Helvetica,sans-serif}
+.breath .lbl-ink{fill:var(--ink);font:700 13px Archivo,Helvetica,sans-serif}
+.myth-steps{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.myth-steps li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.myth-steps .n{width:36px;height:36px;border-radius:10px;background:var(--blue);color:var(--on-blue);display:flex;align-items:center;justify-content:center;font-weight:800;font-style:italic}
+.myth-steps b{display:block;color:var(--ink);margin-bottom:4px}
+.route.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:760px){.route.three{grid-template-columns:1fr}}
+.req-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;max-width:640px}
+.req-box .acts{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
