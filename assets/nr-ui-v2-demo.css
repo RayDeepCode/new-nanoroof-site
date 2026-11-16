@@ -1,0 +1,241 @@
+/* ============================================================
+   NANOROOF UI v2 DEMO — EXAMPLE ONLY
+   Scoped to html.nr-ui-v2 (home page). Do not roll sitewide
+   until Ray approves docs/de-claude-ui-plan.md.
+   ============================================================ */
+
+html.nr-ui-v2{
+  --nr-navy:#0A1F3D;
+  --nr-navy-mid:#123056;
+  --nr-blue:#1A4B8C;
+  --nr-green:#5FAF3A;
+  --nr-green-deep:#2F6B18;
+  --nr-ink:#0A1F3D;
+  --nr-body:#2C3A4C;
+  --nr-muted:#5A6878;
+  --nr-line:#C9D3E0;
+  --nr-paper:#F5F7FA;
+  --nr-white:#FFFFFF;
+  --nr-radius:2px;
+  --nr-radius-ctrl:6px;
+  --nr-shadow:none;
+  --nr-font:"Archivo","Helvetica Neue",Helvetica,sans-serif;
+}
+
+/* Demo ribbon — remove on sitewide ship */
+html.nr-ui-v2 .nr-demo-ribbon{
+  position:sticky;top:0;z-index:40;
+  background:#0A1F3D;color:#DCE6F5;
+  font:650 .82rem/1.4 var(--nr-font);
+  letter-spacing:.02em;
+  padding:8px 16px;text-align:center;
+  border-bottom:2px solid var(--nr-green);
+}
+html.nr-ui-v2 .nr-demo-ribbon b{color:#fff;font-weight:750}
+html.nr-ui-v2 .nr-demo-ribbon a{color:var(--nr-green);font-weight:700}
+
+/* ---------- HERO: brand-first, full-bleed, no SaaS strip ---------- */
+html.nr-ui-v2 .hero.hero-center.m-night{
+  text-align:left;
+  min-height:min(92vh,820px);
+  padding:72px 0 88px;
+  display:flex;align-items:flex-end;
+  background:
+    linear-gradient(105deg,rgba(8,22,42,.94) 0%,rgba(8,22,42,.78) 42%,rgba(8,22,42,.35) 68%,rgba(8,22,42,.18) 100%),
+    linear-gradient(0deg,rgba(8,22,42,.55),transparent 42%);
+  background-color:var(--nr-navy);
+  border:0;
+  overflow:hidden;
+}
+html.nr-ui-v2 .hero.hero-center .hc-net{display:none!important}
+html.nr-ui-v2 .hero.hero-center .hc-photo{
+  inset:0;width:100%;right:auto;top:0;bottom:0;
+  opacity:.55;mix-blend-mode:normal;
+  background-position:62% center;
+  transform:scale(1.04);
+  animation:nrV2Wash 18s ease-in-out infinite alternate;
+}
+html.nr-ui-v2 .hero.hero-center .gen-tag{
+  left:auto;right:16px;bottom:16px;
+  border-radius:var(--nr-radius);
+  background:rgba(8,22,42,.72);
+  letter-spacing:.04em;text-transform:uppercase;font-size:.68rem;
+}
+html.nr-ui-v2 .hero.hero-center .hc-inner{
+  max-width:720px;margin:0;padding-bottom:8px;text-align:left;
+}
+html.nr-ui-v2 .nr-brand{
+  margin:0 0 6px;
+  font:780 clamp(2.6rem,6.2vw,5.2rem)/.92 var(--nr-font);
+  font-variation-settings:"wdth" 125;
+  letter-spacing:-.03em;
+  color:#fff;
+}
+html.nr-ui-v2 .nr-brand .nn{color:var(--nr-green)}
+html.nr-ui-v2 .nr-brand-sub{
+  margin:0 0 28px;
+  font:650 .78rem/1 var(--nr-font);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:rgba(220,230,245,.72);
+}
+html.nr-ui-v2 .hero.hero-center h1{
+  margin:0 0 18px;max-width:16ch;
+  font-size:clamp(1.85rem,3.4vw,2.85rem);
+  font-weight:650;
+  font-style:normal;
+  font-variation-settings:"wdth" 105;
+  letter-spacing:-.015em;
+  line-height:1.12;
+  color:#F2F6FC;
+}
+html.nr-ui-v2 .hero.hero-center h1 em{
+  font-style:normal;font-weight:780;color:var(--nr-green);
+}
+html.nr-ui-v2 .hero.hero-center .lead{
+  margin:0 0 28px;max-width:42ch;
+  font-size:1.05rem;line-height:1.55;
+  color:rgba(220,230,245,.88);
+}
+html.nr-ui-v2 .hero.hero-center .acts{
+  justify-content:flex-start;gap:10px;
+}
+html.nr-ui-v2 .hero.hero-center .btn{
+  border-radius:var(--nr-radius-ctrl);
+  min-height:48px;padding:0 20px;
+  font-weight:700;font-variation-settings:"wdth" 100;
+}
+html.nr-ui-v2 .hero.hero-center .btn-green{
+  background:var(--nr-green);color:#0A1F3D;
+}
+html.nr-ui-v2 .hero.hero-center .btn-line{
+  border-width:1.5px;border-color:rgba(255,255,255,.55);color:#fff;
+  background:transparent;
+}
+
+/* Proof as quiet rule row — NOT a floating SaaS card */
+html.nr-ui-v2 .stripband{
+  margin-top:0;z-index:1;
+  background:var(--nr-paper)!important;
+  border-top:1px solid var(--nr-line)!important;
+  border-bottom:1px solid var(--nr-line)!important;
+}
+html.nr-ui-v2 .stripband .wrap{padding-top:0;padding-bottom:0}
+html.nr-ui-v2 .stripband .strip{
+  background:transparent;border:0;border-radius:0;
+  box-shadow:none;overflow:visible;
+  display:grid;grid-template-columns:repeat(3,1fr);
+}
+html.nr-ui-v2 .stripband .strip div{
+  padding:22px 8px;border:0;
+  border-right:1px solid var(--nr-line);
+}
+html.nr-ui-v2 .stripband .strip div:last-child{border-right:0}
+html.nr-ui-v2 .stripband .strip b{
+  color:var(--nr-ink);font-size:1rem;font-weight:750;
+  font-style:normal;margin-bottom:4px;
+}
+html.nr-ui-v2 .stripband .strip b::before{display:none}
+html.nr-ui-v2 .stripband .strip span{color:var(--nr-muted);font-size:.9rem}
+html.nr-ui-v2 .stripband .strip .ic{
+  display:none; /* drop generic icon cluster */
+}
+html.nr-ui-v2 .stripband+section{padding-top:72px}
+
+/* ---------- WAYS: editorial split, no twin soft cards ---------- */
+html.nr-ui-v2 #home-ways.m-night{
+  background:var(--nr-navy);
+  background-image:none;
+  border-top:0;
+  padding:96px 0;
+}
+html.nr-ui-v2 #home-ways .section-head{
+  max-width:36rem;margin-bottom:36px;
+}
+/* single thin accent — override sitewide 4px bar */
+html.nr-ui-v2 #home-ways .section h2::before,
+html.nr-ui-v2 #home-ways h2::before{
+  content:""!important;display:block!important;
+  width:48px;height:2px;border-radius:0;background:var(--nr-green);margin:0 0 18px;
+}
+html.nr-ui-v2 #home-ways h2{
+  color:#fff;font-style:normal;font-weight:720;
+  font-variation-settings:"wdth" 108;
+  letter-spacing:-.02em;
+}
+html.nr-ui-v2 #home-ways .lead{color:rgba(220,230,245,.82)}
+html.nr-ui-v2 #home-ways .ways{
+  max-width:none;gap:0;
+  border-top:1px solid rgba(255,255,255,.16);
+  border-bottom:1px solid rgba(255,255,255,.16);
+}
+html.nr-ui-v2 #home-ways .way{
+  margin:0;border:0;border-radius:0;box-shadow:none;
+  background:transparent;overflow:hidden;
+  display:grid;grid-template-rows:auto 1fr;
+}
+html.nr-ui-v2 #home-ways .way.ours{
+  border:0;border-left:1px solid rgba(255,255,255,.16);
+  box-shadow:none;
+}
+html.nr-ui-v2 #home-ways .vidwrap{
+  border-radius:0;max-height:none;aspect-ratio:16/10;
+}
+html.nr-ui-v2 #home-ways .vtag{
+  left:0;top:0;border-radius:0;
+  background:rgba(8,22,42,.88);
+  font-size:.72rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  padding:8px 12px;
+}
+html.nr-ui-v2 #home-ways .way.ours .vtag{
+  background:var(--nr-green);color:#0A1F3D;
+}
+html.nr-ui-v2 #home-ways .way figcaption{
+  padding:22px 20px 28px;
+  background:transparent;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+html.nr-ui-v2 #home-ways .way h3{
+  font-size:1.2rem;font-weight:750;margin-bottom:12px;
+  letter-spacing:-.01em;
+}
+html.nr-ui-v2 #home-ways .way li{
+  padding-left:0;margin-bottom:10px;
+  color:rgba(220,230,245,.88);font-size:.95rem;
+}
+html.nr-ui-v2 #home-ways .way li::before{display:none}
+html.nr-ui-v2 #home-ways .way li::marker{content:none}
+html.nr-ui-v2 #home-ways .way ul{list-style:none;padding:0}
+html.nr-ui-v2 #home-ways .way li{
+  border-left:2px solid rgba(255,255,255,.22);
+  padding-left:12px;
+}
+html.nr-ui-v2 #home-ways .way.ours li{
+  border-left-color:var(--nr-green);
+}
+html.nr-ui-v2 #home-ways .ways-cap{
+  margin-top:14px;color:rgba(159,179,209,.75)!important;
+  font-size:.85rem;letter-spacing:.02em;
+}
+
+@keyframes nrV2Wash{
+  from{transform:scale(1.02) translate3d(0,0,0)}
+  to{transform:scale(1.06) translate3d(-1.2%,.6%,0)}
+}
+@media (prefers-reduced-motion:reduce){
+  html.nr-ui-v2 .hero.hero-center .hc-photo{animation:none;transform:none}
+}
+
+@media (max-width:760px){
+  html.nr-ui-v2 .hero.hero-center.m-night{
+    min-height:auto;padding:56px 0 64px;align-items:flex-end;
+  }
+  html.nr-ui-v2 .hero.hero-center .hc-photo{opacity:.4}
+  html.nr-ui-v2 .stripband .strip{grid-template-columns:1fr}
+  html.nr-ui-v2 .stripband .strip div{
+    border-right:0;border-bottom:1px solid var(--nr-line);padding:16px 0;
+  }
+  html.nr-ui-v2 .stripband .strip div:last-child{border-bottom:0}
+  html.nr-ui-v2 #home-ways .way.ours{border-left:0;border-top:1px solid rgba(255,255,255,.16)}
+}
